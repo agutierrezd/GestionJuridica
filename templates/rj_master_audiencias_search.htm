@@ -1,0 +1,406 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+		
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel rj_master_audiencias search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN audiencia_id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_audiencia_id}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="audiencia_id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="audiencia_id" data-fieldname="audiencia_id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_audiencia_id}">
+		{$label rj_master_audiencias audiencia_id }	</label>
+	<div class="r-search-option">
+		{$searchtype_audiencia_id}
+	</div>
+	<div class="r-search-field">
+		{$audiencia_id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$audiencia_id_editcontrol1}
+	</div>
+	
+</div>
+
+{END audiencia_id_fieldblock}
+											
+{BEGIN rj_di_fk_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_rj_di_fk}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="rj_di_fk{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="rj_di_fk" data-fieldname="rj_di_fk" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_rj_di_fk}">
+		{$label rj_master_audiencias rj_di_fk }	</label>
+	<div class="r-search-option">
+		{$searchtype_rj_di_fk}
+	</div>
+	<div class="r-search-field">
+		{$rj_di_fk_editcontrol}	</div>
+	<div class="r-search-field">
+		{$rj_di_fk_editcontrol1}
+	</div>
+	
+</div>
+
+{END rj_di_fk_fieldblock}
+											
+{BEGIN expediente_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_expediente}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="expediente{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="expediente" data-fieldname="expediente" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_expediente}">
+		{$label rj_master_audiencias expediente }	</label>
+	<div class="r-search-option">
+		{$searchtype_expediente}
+	</div>
+	<div class="r-search-field">
+		{$expediente_editcontrol}	</div>
+	<div class="r-search-field">
+		{$expediente_editcontrol1}
+	</div>
+	
+</div>
+
+{END expediente_fieldblock}
+											
+{BEGIN fecha_audiencia_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha_audiencia}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="fecha_audiencia{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="fecha_audiencia" data-fieldname="fecha_audiencia" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_fecha_audiencia}">
+		{$label rj_master_audiencias fecha_audiencia }	</label>
+	<div class="r-search-option">
+		{$searchtype_fecha_audiencia}
+	</div>
+	<div class="r-search-field">
+		{$fecha_audiencia_editcontrol}	</div>
+	<div class="r-search-field">
+		{$fecha_audiencia_editcontrol1}
+	</div>
+	
+</div>
+
+{END fecha_audiencia_fieldblock}
+											
+{BEGIN hora_audiencia_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_hora_audiencia}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="hora_audiencia{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="hora_audiencia" data-fieldname="hora_audiencia" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_hora_audiencia}">
+		{$label rj_master_audiencias hora_audiencia }	</label>
+	<div class="r-search-option">
+		{$searchtype_hora_audiencia}
+	</div>
+	<div class="r-search-field">
+		{$hora_audiencia_editcontrol}	</div>
+	<div class="r-search-field">
+		{$hora_audiencia_editcontrol1}
+	</div>
+	
+</div>
+
+{END hora_audiencia_fieldblock}
+											
+{BEGIN juzgado_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_juzgado}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="juzgado{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="juzgado" data-fieldname="juzgado" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_juzgado}">
+		{$label rj_master_audiencias juzgado }	</label>
+	<div class="r-search-option">
+		{$searchtype_juzgado}
+	</div>
+	<div class="r-search-field">
+		{$juzgado_editcontrol}	</div>
+	<div class="r-search-field">
+		{$juzgado_editcontrol1}
+	</div>
+	
+</div>
+
+{END juzgado_fieldblock}
+											
+{BEGIN sys_date_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sys_date}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sys_date{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="sys_date" data-fieldname="sys_date" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sys_date}">
+		{$label rj_master_audiencias sys_date }	</label>
+	<div class="r-search-option">
+		{$searchtype_sys_date}
+	</div>
+	<div class="r-search-field">
+		{$sys_date_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sys_date_editcontrol1}
+	</div>
+	
+</div>
+
+{END sys_date_fieldblock}
+											
+{BEGIN sys_user_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sys_user}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="sys_user{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="sys_user" data-fieldname="sys_user" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sys_user}">
+		{$label rj_master_audiencias sys_user }	</label>
+	<div class="r-search-option">
+		{$searchtype_sys_user}
+	</div>
+	<div class="r-search-field">
+		{$sys_user_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sys_user_editcontrol1}
+	</div>
+	
+</div>
+
+{END sys_user_fieldblock}
+											
+{BEGIN realizada_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_realizada}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="realizada{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="realizada" data-fieldname="realizada" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_realizada}">
+		{$label rj_master_audiencias realizada }	</label>
+	<div class="r-search-option">
+		{$searchtype_realizada}
+	</div>
+	<div class="r-search-field">
+		{$realizada_editcontrol}	</div>
+	<div class="r-search-field">
+		{$realizada_editcontrol1}
+	</div>
+	
+</div>
+
+{END realizada_fieldblock}
+											
+{BEGIN obs_audiencia_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_obs_audiencia}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="obs_audiencia{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="obs_audiencia" data-fieldname="obs_audiencia" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_obs_audiencia}">
+		{$label rj_master_audiencias obs_audiencia }	</label>
+	<div class="r-search-option">
+		{$searchtype_obs_audiencia}
+	</div>
+	<div class="r-search-field">
+		{$obs_audiencia_editcontrol}	</div>
+	<div class="r-search-field">
+		{$obs_audiencia_editcontrol1}
+	</div>
+	
+</div>
+
+{END obs_audiencia_fieldblock}
+											
+{BEGIN rsys_user_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_rsys_user}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="rsys_user{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="rsys_user" data-fieldname="rsys_user" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_rsys_user}">
+		{$label rj_master_audiencias rsys_user }	</label>
+	<div class="r-search-option">
+		{$searchtype_rsys_user}
+	</div>
+	<div class="r-search-field">
+		{$rsys_user_editcontrol}	</div>
+	<div class="r-search-field">
+		{$rsys_user_editcontrol1}
+	</div>
+	
+</div>
+
+{END rsys_user_fieldblock}
+											
+{BEGIN rsys_date_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_rsys_date}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="rsys_date{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="rsys_date" data-fieldname="rsys_date" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_rsys_date}">
+		{$label rj_master_audiencias rsys_date }	</label>
+	<div class="r-search-option">
+		{$searchtype_rsys_date}
+	</div>
+	<div class="r-search-field">
+		{$rsys_date_editcontrol}	</div>
+	<div class="r-search-field">
+		{$rsys_date_editcontrol1}
+	</div>
+	
+</div>
+
+{END rsys_date_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Buscar			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Reiniciar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancelar			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

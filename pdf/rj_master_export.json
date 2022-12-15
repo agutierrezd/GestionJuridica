@@ -1,0 +1,219 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel rj_master export}","hidden":"{$item_hide_export_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+		
+		]
+	}
+}
+,
+		
+				
+								
+{
+	table: {
+	
+				
+		location: 'grid',
+		
+		
+		widths: [
+								"%", 
+					 ],	
+		
+			heights: [
+								
+			"%",
+			 
+				],
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":{$tipo_proceso_fk_pdfvalue},"hidden":"{$item_hide_export_field1}"},
+				
+				
+			{"text":{$num_proceso_pdfvalue},"hidden":"{$item_hide_export_field2}"},
+				
+				
+			{"text":{$estado_id_fk_pdfvalue},"hidden":"{$item_hide_export_field3}"},
+				
+				
+			{"text":{$hechos_pdfvalue},"hidden":"{$item_hide_export_field4}"},
+				
+				
+			{"text":{$municipio_fk_pdfvalue},"hidden":"{$item_hide_export_field5}"},
+				
+				
+			{"text":{$causas_pdfvalue},"hidden":"{$item_hide_export_field6}"},
+				
+				
+			{"text":{$doc_demandante_pdfvalue},"hidden":"{$item_hide_export_field7}"},
+				
+				
+			{"text":{$nom_demandante_pdfvalue},"hidden":"{$item_hide_export_field8}"},
+				
+				
+			{"text":{$apoderado_demandante_pdfvalue},"hidden":"{$item_hide_export_field9}"},
+				
+				
+			{"text":{$nom_demandado_pdfvalue},"hidden":"{$item_hide_export_field10}"},
+				
+				
+			{"text":{$despacho_actual_pdfvalue},"hidden":"{$item_hide_export_field11}"},
+				
+				
+			{"text":{$fecha_presentacion_demanda_pdfvalue},"hidden":"{$item_hide_export_field12}"},
+				
+				
+			{"text":{$pretenciones_pdfvalue},"hidden":"{$item_hide_export_field13}"},
+				
+				
+			{"text":{$cuantia_pretension_pdfvalue},"hidden":"{$item_hide_export_field14}"},
+				
+				
+			{"text":{$apoderado_oaj_pdfvalue},"hidden":"{$item_hide_export_field17}"},
+				
+				
+			{"text":{$fecha_admision_demanda_pdfvalue},"hidden":"{$item_hide_export_field18}"},
+				
+				
+			{"text":{$fecha_radicado_oaj_pdfvalue},"hidden":"{$item_hide_export_field19}"},
+				
+				
+			{"text":{$contestacion_demanda_pdfvalue},"hidden":"{$item_hide_export_field20}"},
+				
+				
+			{"text":{$fecha_constestacion_demanda_pdfvalue},"hidden":"{$item_hide_export_field21}"},
+				
+				
+			{"text":{$etapa_judicial_pdfvalue},"hidden":"{$item_hide_export_field22}"},
+				
+				
+			{"text":{$fecha_provision_contable_pdfvalue},"hidden":"{$item_hide_export_field23}"},
+				
+				
+			{"text":{$valor_provision_contable_pdfvalue},"hidden":"{$item_hide_export_field24}"},
+				
+				
+			{"text":{$propabilidad_perder_caso_pdfvalue},"hidden":"{$item_hide_export_field25}"},
+				
+				
+			{"text":{$observacion_perder_caso_pdfvalue},"hidden":"{$item_hide_export_field26}"},
+				
+				
+			{"text":{$fecha_proxima_actualizacion_pdfvalue},"hidden":"{$item_hide_export_field27}"},
+				
+				
+			{"text":{$radicado_ekogui_pdfvalue},"hidden":"{$item_hide_export_field28}"},
+				
+				
+			{"text":{$fecha_radicado_ekogui_pdfvalue},"hidden":"{$item_hide_export_field29}"},
+				
+				
+			{"text":{$ekogui_id_pdfvalue},"hidden":"{$item_hide_export_field30}"},
+				
+				
+			{"text":{$carpeta_pdfvalue},"hidden":"{$item_hide_export_field31}"},
+				
+				
+			{"text":{$CAJA_pdfvalue},"hidden":"{$item_hide_export_field32}"},
+				
+				
+			{"text":{$estado_proceso_pdfvalue},"hidden":"{$item_hide_export_field33}"},
+				
+				
+			{"text":{$id_oaj_pdfvalue},"hidden":"{$item_hide_export_field16}"},
+				
+				
+			{"text":{$calidad_pdfvalue},"hidden":"{$item_hide_export_field}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+		
+		]
+	}
+}
+,
+		
+					]
+}
+  

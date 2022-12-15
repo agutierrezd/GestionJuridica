@@ -1,0 +1,318 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+		
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel q_prescipcicion search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN EXPEDIENTE_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_EXPEDIENTE}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="EXPEDIENTE{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="EXPEDIENTE" data-fieldname="EXPEDIENTE" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_EXPEDIENTE}">
+		{$label q_prescipcicion EXPEDIENTE }	</label>
+	<div class="r-search-option">
+		{$searchtype_EXPEDIENTE}
+	</div>
+	<div class="r-search-field">
+		{$EXPEDIENTE_editcontrol}	</div>
+	<div class="r-search-field">
+		{$EXPEDIENTE_editcontrol1}
+	</div>
+	
+</div>
+
+{END EXPEDIENTE_fieldblock}
+											
+{BEGIN NIT_CEDULA_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_NIT_CEDULA}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="NIT_CEDULA{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="NIT_CEDULA" data-fieldname="NIT_CEDULA" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_NIT_CEDULA}">
+		{$label q_prescipcicion NIT_CEDULA }	</label>
+	<div class="r-search-option">
+		{$searchtype_NIT_CEDULA}
+	</div>
+	<div class="r-search-field">
+		{$NIT_CEDULA_editcontrol}	</div>
+	<div class="r-search-field">
+		{$NIT_CEDULA_editcontrol1}
+	</div>
+	
+</div>
+
+{END NIT_CEDULA_fieldblock}
+											
+{BEGIN NOMBRE_RAZON_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_NOMBRE_RAZON}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="NOMBRE_RAZON{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="NOMBRE_RAZON" data-fieldname="NOMBRE_RAZON" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_NOMBRE_RAZON}">
+		{$label q_prescipcicion NOMBRE_RAZON }	</label>
+	<div class="r-search-option">
+		{$searchtype_NOMBRE_RAZON}
+	</div>
+	<div class="r-search-field">
+		{$NOMBRE_RAZON_editcontrol}	</div>
+	<div class="r-search-field">
+		{$NOMBRE_RAZON_editcontrol1}
+	</div>
+	
+</div>
+
+{END NOMBRE_RAZON_fieldblock}
+											
+{BEGIN FECHA_PRESCRIPCION_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_FECHA_PRESCRIPCION}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="FECHA_PRESCRIPCION{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="FECHA_PRESCRIPCION" data-fieldname="FECHA_PRESCRIPCION" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_FECHA_PRESCRIPCION}">
+		{$label q_prescipcicion FECHA_PRESCRIPCION }	</label>
+	<div class="r-search-option">
+		{$searchtype_FECHA_PRESCRIPCION}
+	</div>
+	<div class="r-search-field">
+		{$FECHA_PRESCRIPCION_editcontrol}	</div>
+	<div class="r-search-field">
+		{$FECHA_PRESCRIPCION_editcontrol1}
+	</div>
+	
+</div>
+
+{END FECHA_PRESCRIPCION_fieldblock}
+											
+{BEGIN dias_paraprescripcion_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dias_paraprescripcion}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="dias_paraprescripcion{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="dias_paraprescripcion" data-fieldname="dias_paraprescripcion" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_dias_paraprescripcion}">
+		{$label q_prescipcicion dias_paraprescripcion }	</label>
+	<div class="r-search-option">
+		{$searchtype_dias_paraprescripcion}
+	</div>
+	<div class="r-search-field">
+		{$dias_paraprescripcion_editcontrol}	</div>
+	<div class="r-search-field">
+		{$dias_paraprescripcion_editcontrol1}
+	</div>
+	
+</div>
+
+{END dias_paraprescripcion_fieldblock}
+											
+{BEGIN MSJ_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_MSJ}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="MSJ{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="MSJ" data-fieldname="MSJ" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_MSJ}">
+		{$label q_prescipcicion MSJ }	</label>
+	<div class="r-search-option">
+		{$searchtype_MSJ}
+	</div>
+	<div class="r-search-field">
+		{$MSJ_editcontrol}	</div>
+	<div class="r-search-field">
+		{$MSJ_editcontrol1}
+	</div>
+	
+</div>
+
+{END MSJ_fieldblock}
+											
+{BEGIN ESTADO_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ESTADO}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="ESTADO{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="ESTADO" data-fieldname="ESTADO" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ESTADO}">
+		{$label q_prescipcicion ESTADO }	</label>
+	<div class="r-search-option">
+		{$searchtype_ESTADO}
+	</div>
+	<div class="r-search-field">
+		{$ESTADO_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ESTADO_editcontrol1}
+	</div>
+	
+</div>
+
+{END ESTADO_fieldblock}
+											
+{BEGIN ABOGADO_RESP_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ABOGADO_RESP}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="ABOGADO_RESP{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="ABOGADO_RESP" data-fieldname="ABOGADO_RESP" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_ABOGADO_RESP}">
+		{$label q_prescipcicion ABOGADO_RESP }	</label>
+	<div class="r-search-option">
+		{$searchtype_ABOGADO_RESP}
+	</div>
+	<div class="r-search-field">
+		{$ABOGADO_RESP_editcontrol}	</div>
+	<div class="r-search-field">
+		{$ABOGADO_RESP_editcontrol1}
+	</div>
+	
+</div>
+
+{END ABOGADO_RESP_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Buscar			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Reiniciar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancelar			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

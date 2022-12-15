@@ -1,0 +1,2701 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+		
+	</head>
+
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}
+		<style>
+		{$containerCss}
+		</style>
+		<div class="r-vbar-page">
+			<div data-width="300px" data-fixed class="r-left clearfix {$leftbar_class}" >
+								<div data-location="left" id="form_left_{$pageid}" data-makeup="leftbar" {$form_left} data-pageid="{$pageid}">
+{BEGIN left_block}
+ 
+     
+         
+
+			<div data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell class="clearfix " data-itemid="logo1" {$item_logo1}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo1" {$item_logo1} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</div>
+		
+ 
+
+			<div class="clearfix " data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell data-itemid="expand_button" {$item_expand_button} data-topcell-item-type="expand_button" >
+				<span data-itemtype="expand_button" data-itemid="expand_button" {$item_expand_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Expandir" class="btn btn-link   
+	" href="#" >
+					<span class="glyphicon glyphicon-triangle-right"></span>
+										</a>
+</span>
+			</div>
+		
+     
+     
+         
+
+			<div data-cellId="left_c1" data-pageid="{$pageid}" class="clearfix  r-ori-vert " data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{$menu main}			</div>
+		
+ 
+
+			<div class="clearfix  r-ori-vert" data-cellId="left_c1" data-pageid="{$pageid}" data-itemid="search_panel" {$item_search_panel} data-topcell-item-type="search_panel" >
+				<!-- Begin Search panel content -->
+<div class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} data-itemtype="search_panel" data-itemid="search_panel" {$item_search_panel} data-pageid="{$pageid}" >
+
+	<div class="panel-heading">
+		<div class="btn-group" id="addSearchFieldButton{$id}">
+			<button id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle btn-sm )" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Búsqueda			<span class="caret"></span>
+			</button>
+		</div>
+
+
+		<div class="btn-group searchpanel-options" id="searchPanelOptions{$id}">
+			<button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-left">
+				<li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><a>Mostrar opciones</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}><label for="radioAll"><span class="glyphicon">&nbsp;</span>todas las condiciones</label></a></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}><label for="radioAny"><span class="glyphicon">&nbsp;</span>cualquier condición</label></a></li>
+				<li role="separator" class="divider"></li>
+				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>esconder</a></li>
+			</ul>
+		</div>
+
+
+		</div>
+	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
+
+
+		
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow form-group" {$filterRow_attrs}>
+			<label>{$fLabel}</label>	{$delCtrlButt}
+				<span class="rnr-searchtype">{$searchtype}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
+		</div>
+		{END searchCtrlBlock}
+																		{BEGIN searchCtrlBlock_CAJA}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_CAJA}" {$filterRow_attrs_CAJA}>
+			<label>{$label rj_master CAJA }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_CAJA}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_CAJA}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_CAJA}</span>
+						</div>
+		{END searchCtrlBlock_CAJA}
+																{BEGIN searchCtrlBlock_calidad}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_calidad}" {$filterRow_attrs_calidad}>
+			<label>{$label rj_master calidad }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_calidad}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_calidad}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_calidad}</span>
+						</div>
+		{END searchCtrlBlock_calidad}
+																{BEGIN searchCtrlBlock_id_oaj}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_id_oaj}" {$filterRow_attrs_id_oaj}>
+			<label>{$label rj_master id_oaj }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_id_oaj}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_id_oaj}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_id_oaj}</span>
+						</div>
+		{END searchCtrlBlock_id_oaj}
+																{BEGIN searchCtrlBlock_apoderado_oajtemp}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_apoderado_oajtemp}" {$filterRow_attrs_apoderado_oajtemp}>
+			<label>{$label rj_master apoderado_oajtemp }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_apoderado_oajtemp}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_apoderado_oajtemp}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_apoderado_oajtemp}</span>
+						</div>
+		{END searchCtrlBlock_apoderado_oajtemp}
+																{BEGIN searchCtrlBlock_valor_provision_contable}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_valor_provision_contable}" {$filterRow_attrs_valor_provision_contable}>
+			<label>{$label rj_master valor_provision_contable }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_valor_provision_contable}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_valor_provision_contable}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_valor_provision_contable}</span>
+						</div>
+		{END searchCtrlBlock_valor_provision_contable}
+																{BEGIN searchCtrlBlock_tipo_proceso_fk}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_tipo_proceso_fk}" {$filterRow_attrs_tipo_proceso_fk}>
+			<label>{$label rj_master tipo_proceso_fk }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_tipo_proceso_fk}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_tipo_proceso_fk}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_tipo_proceso_fk}</span>
+						</div>
+		{END searchCtrlBlock_tipo_proceso_fk}
+																{BEGIN searchCtrlBlock_radicado_ekogui}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_radicado_ekogui}" {$filterRow_attrs_radicado_ekogui}>
+			<label>{$label rj_master radicado_ekogui }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_radicado_ekogui}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_radicado_ekogui}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_radicado_ekogui}</span>
+						</div>
+		{END searchCtrlBlock_radicado_ekogui}
+																{BEGIN searchCtrlBlock_propabilidad_perder_caso}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_propabilidad_perder_caso}" {$filterRow_attrs_propabilidad_perder_caso}>
+			<label>{$label rj_master propabilidad_perder_caso }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_propabilidad_perder_caso}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_propabilidad_perder_caso}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_propabilidad_perder_caso}</span>
+						</div>
+		{END searchCtrlBlock_propabilidad_perder_caso}
+																{BEGIN searchCtrlBlock_pretenciones}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_pretenciones}" {$filterRow_attrs_pretenciones}>
+			<label>{$label rj_master pretenciones }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_pretenciones}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_pretenciones}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_pretenciones}</span>
+						</div>
+		{END searchCtrlBlock_pretenciones}
+																{BEGIN searchCtrlBlock_observacion_perder_caso}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_observacion_perder_caso}" {$filterRow_attrs_observacion_perder_caso}>
+			<label>{$label rj_master observacion_perder_caso }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_observacion_perder_caso}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_observacion_perder_caso}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_observacion_perder_caso}</span>
+						</div>
+		{END searchCtrlBlock_observacion_perder_caso}
+																{BEGIN searchCtrlBlock_num_proceso}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_num_proceso}" {$filterRow_attrs_num_proceso}>
+			<label>{$label rj_master num_proceso }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_num_proceso}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_num_proceso}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_num_proceso}</span>
+						</div>
+		{END searchCtrlBlock_num_proceso}
+																{BEGIN searchCtrlBlock_nom_demandante}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_nom_demandante}" {$filterRow_attrs_nom_demandante}>
+			<label>{$label rj_master nom_demandante }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_nom_demandante}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_nom_demandante}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_nom_demandante}</span>
+						</div>
+		{END searchCtrlBlock_nom_demandante}
+																{BEGIN searchCtrlBlock_nom_demandado}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_nom_demandado}" {$filterRow_attrs_nom_demandado}>
+			<label>{$label rj_master nom_demandado }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_nom_demandado}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_nom_demandado}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_nom_demandado}</span>
+						</div>
+		{END searchCtrlBlock_nom_demandado}
+																{BEGIN searchCtrlBlock_municipio_fk}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_municipio_fk}" {$filterRow_attrs_municipio_fk}>
+			<label>{$label rj_master municipio_fk }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_municipio_fk}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_municipio_fk}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_municipio_fk}</span>
+						</div>
+		{END searchCtrlBlock_municipio_fk}
+																{BEGIN searchCtrlBlock_hechos}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_hechos}" {$filterRow_attrs_hechos}>
+			<label>{$label rj_master hechos }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_hechos}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_hechos}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_hechos}</span>
+						</div>
+		{END searchCtrlBlock_hechos}
+																{BEGIN searchCtrlBlock_fecha_radicado_oaj}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_fecha_radicado_oaj}" {$filterRow_attrs_fecha_radicado_oaj}>
+			<label>{$label rj_master fecha_radicado_oaj }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_fecha_radicado_oaj}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_fecha_radicado_oaj}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_fecha_radicado_oaj}</span>
+						</div>
+		{END searchCtrlBlock_fecha_radicado_oaj}
+																{BEGIN searchCtrlBlock_fecha_radicado_ekogui}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_fecha_radicado_ekogui}" {$filterRow_attrs_fecha_radicado_ekogui}>
+			<label>{$label rj_master fecha_radicado_ekogui }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_fecha_radicado_ekogui}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_fecha_radicado_ekogui}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_fecha_radicado_ekogui}</span>
+						</div>
+		{END searchCtrlBlock_fecha_radicado_ekogui}
+																{BEGIN searchCtrlBlock_fecha_proxima_actualizacion}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_fecha_proxima_actualizacion}" {$filterRow_attrs_fecha_proxima_actualizacion}>
+			<label>{$label rj_master fecha_proxima_actualizacion }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_fecha_proxima_actualizacion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_fecha_proxima_actualizacion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_fecha_proxima_actualizacion}</span>
+						</div>
+		{END searchCtrlBlock_fecha_proxima_actualizacion}
+																{BEGIN searchCtrlBlock_fecha_provision_contable}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_fecha_provision_contable}" {$filterRow_attrs_fecha_provision_contable}>
+			<label>{$label rj_master fecha_provision_contable }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_fecha_provision_contable}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_fecha_provision_contable}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_fecha_provision_contable}</span>
+						</div>
+		{END searchCtrlBlock_fecha_provision_contable}
+																{BEGIN searchCtrlBlock_fecha_presentacion_demanda}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_fecha_presentacion_demanda}" {$filterRow_attrs_fecha_presentacion_demanda}>
+			<label>{$label rj_master fecha_presentacion_demanda }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_fecha_presentacion_demanda}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_fecha_presentacion_demanda}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_fecha_presentacion_demanda}</span>
+						</div>
+		{END searchCtrlBlock_fecha_presentacion_demanda}
+																{BEGIN searchCtrlBlock_fecha_constestacion_demanda}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_fecha_constestacion_demanda}" {$filterRow_attrs_fecha_constestacion_demanda}>
+			<label>{$label rj_master fecha_constestacion_demanda }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_fecha_constestacion_demanda}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_fecha_constestacion_demanda}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_fecha_constestacion_demanda}</span>
+						</div>
+		{END searchCtrlBlock_fecha_constestacion_demanda}
+																{BEGIN searchCtrlBlock_fecha_admision_demanda}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_fecha_admision_demanda}" {$filterRow_attrs_fecha_admision_demanda}>
+			<label>{$label rj_master fecha_admision_demanda }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_fecha_admision_demanda}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_fecha_admision_demanda}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_fecha_admision_demanda}</span>
+						</div>
+		{END searchCtrlBlock_fecha_admision_demanda}
+																{BEGIN searchCtrlBlock_etapa_judicial}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_etapa_judicial}" {$filterRow_attrs_etapa_judicial}>
+			<label>{$label rj_master etapa_judicial }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_etapa_judicial}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_etapa_judicial}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_etapa_judicial}</span>
+						</div>
+		{END searchCtrlBlock_etapa_judicial}
+																{BEGIN searchCtrlBlock_estado_proceso}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_estado_proceso}" {$filterRow_attrs_estado_proceso}>
+			<label>{$label rj_master estado_proceso }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_estado_proceso}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_estado_proceso}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_estado_proceso}</span>
+						</div>
+		{END searchCtrlBlock_estado_proceso}
+																{BEGIN searchCtrlBlock_estado_id_fk}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_estado_id_fk}" {$filterRow_attrs_estado_id_fk}>
+			<label>{$label rj_master estado_id_fk }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_estado_id_fk}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_estado_id_fk}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_estado_id_fk}</span>
+						</div>
+		{END searchCtrlBlock_estado_id_fk}
+																{BEGIN searchCtrlBlock_ekogui_id}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_ekogui_id}" {$filterRow_attrs_ekogui_id}>
+			<label>{$label rj_master ekogui_id }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_ekogui_id}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_ekogui_id}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_ekogui_id}</span>
+						</div>
+		{END searchCtrlBlock_ekogui_id}
+																{BEGIN searchCtrlBlock_doc_demandante}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_doc_demandante}" {$filterRow_attrs_doc_demandante}>
+			<label>{$label rj_master doc_demandante }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_doc_demandante}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_doc_demandante}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_doc_demandante}</span>
+						</div>
+		{END searchCtrlBlock_doc_demandante}
+																{BEGIN searchCtrlBlock_despacho_actual}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_despacho_actual}" {$filterRow_attrs_despacho_actual}>
+			<label>{$label rj_master despacho_actual }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_despacho_actual}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_despacho_actual}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_despacho_actual}</span>
+						</div>
+		{END searchCtrlBlock_despacho_actual}
+																{BEGIN searchCtrlBlock_cuantia_pretension}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cuantia_pretension}" {$filterRow_attrs_cuantia_pretension}>
+			<label>{$label rj_master cuantia_pretension }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cuantia_pretension}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cuantia_pretension}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cuantia_pretension}</span>
+						</div>
+		{END searchCtrlBlock_cuantia_pretension}
+																{BEGIN searchCtrlBlock_contestacion_demanda}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_contestacion_demanda}" {$filterRow_attrs_contestacion_demanda}>
+			<label>{$label rj_master contestacion_demanda }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_contestacion_demanda}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_contestacion_demanda}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_contestacion_demanda}</span>
+						</div>
+		{END searchCtrlBlock_contestacion_demanda}
+																{BEGIN searchCtrlBlock_causas}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_causas}" {$filterRow_attrs_causas}>
+			<label>{$label rj_master causas }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_causas}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_causas}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_causas}</span>
+						</div>
+		{END searchCtrlBlock_causas}
+																{BEGIN searchCtrlBlock_carpeta}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_carpeta}" {$filterRow_attrs_carpeta}>
+			<label>{$label rj_master carpeta }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_carpeta}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_carpeta}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_carpeta}</span>
+						</div>
+		{END searchCtrlBlock_carpeta}
+																{BEGIN searchCtrlBlock_apoderado_oaj}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_apoderado_oaj}" {$filterRow_attrs_apoderado_oaj}>
+			<label>{$label rj_master apoderado_oaj }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_apoderado_oaj}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_apoderado_oaj}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_apoderado_oaj}</span>
+						</div>
+		{END searchCtrlBlock_apoderado_oaj}
+																{BEGIN searchCtrlBlock_apoderado_demandante}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_apoderado_demandante}" {$filterRow_attrs_apoderado_demandante}>
+			<label>{$label rj_master apoderado_demandante }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_apoderado_demandante}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_apoderado_demandante}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_apoderado_demandante}</span>
+						</div>
+		{END searchCtrlBlock_apoderado_demandante}
+		
+
+	</div>
+
+	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+		<button class="btn btn-primary btn-sm" id="searchButton{$id}" {$searchbutton_attrs}>Buscar</button>
+
+				<button class="btn btn-default btn-sm" {$showAllCont_attrs} {$showallbutton_attrs}>Mostrar todo</button>
+	</div>
+</div>
+<!-- End Search panel content -->
+			</div>
+		
+ 
+
+			<div class="clearfix  r-ori-vert" data-cellId="left_c1" data-pageid="{$pageid}" data-itemid="filter_panel" {$item_filter_panel} data-topcell-item-type="filter_panel" >
+				<div data-itemtype="filter_panel" data-itemid="filter_panel" {$item_filter_panel} data-pageid="{$pageid}">
+	<div class="filterPanelContainer {$filterPanelStateClass}">
+	<!-- Begin Filter panel content -->
+
+
+
+			
+					
+		
+		{BEGIN filter_control_apoderado_oaj}
+		<div class="panel panel-info filter-field filter-apoderado_oaj-container">
+			<div class="panel-heading filter-expander">
+																	<span class="filter-indicator glyphicon glyphicon-triangle-top"></span>
+
+							<input class="filter-selectAll-apoderado_oaj" type="checkbox" name="selectAll" {$selectAll_attrs_apoderado_oaj} />
+			
+				{BEGIN clearLink_apoderado_oaj}
+				<a href="#" class="filter-clear filter-clear-apoderado_oaj" title="borrar" data-icon="remove" >
+				</a>
+				{END clearLink_apoderado_oaj}
+				{$label rj_master apoderado_oaj }			</div>
+
+			<ul class="list-group">
+				{BEGIN filterCtrlBlock_apoderado_oaj}
+				<li class="list-group-item filter-values filter-values-apoderado_oaj {$collapsedClass_apoderado_oaj} {$visibilityClass_apoderado_oaj}">
+					{$apoderado_oaj_filter}
+								
+					
+					
+					
+					
+							</li>
+				{END filterCtrlBlock_apoderado_oaj}
+
+							{BEGIN filter_button_showmore_apoderado_oaj}
+				<li class="list-group-item filter-show-more {$collapsedClass_apoderado_oaj} {$showMoreBtnClass_apoderado_oaj}">
+					<a class="filter-show-more-link filterShowMore_apoderado_oaj" href="#">{$show_n_more_apoderado_oaj}</a>
+				</li>
+				{END filter_button_showmore_apoderado_oaj}
+			
+
+
+			
+
+							{BEGIN filter_button_multiselect_apoderado_oaj}
+				<li class="filter-multiselect list-group-item filter-field-btn {$collapsedClass_apoderado_oaj}">
+					<a href="#" class="filter-apoderado_oaj-btn-multiselect filter-apply-apoderado_oaj" {$filterbutton_attrs_apoderado_oaj}>Multiselección</a>
+				</li>
+				{END filter_button_multiselect_apoderado_oaj}
+			
+			</ul>
+		</div>
+		{END filter_control_apoderado_oaj}
+				
+					
+		
+		{BEGIN filter_control_fecha_proxima_actualizacion}
+		<div class="panel panel-info filter-field filter-fecha_proxima_actualizacion-container">
+			<div class="panel-heading filter-expander">
+																	<span class="filter-indicator glyphicon glyphicon-triangle-top"></span>
+
+							<input class="filter-selectAll-fecha_proxima_actualizacion" type="checkbox" name="selectAll" {$selectAll_attrs_fecha_proxima_actualizacion} />
+			
+				{BEGIN clearLink_fecha_proxima_actualizacion}
+				<a href="#" class="filter-clear filter-clear-fecha_proxima_actualizacion" title="borrar" data-icon="remove" >
+				</a>
+				{END clearLink_fecha_proxima_actualizacion}
+				{$label rj_master fecha_proxima_actualizacion }			</div>
+
+			<ul class="list-group">
+				{BEGIN filterCtrlBlock_fecha_proxima_actualizacion}
+				<li class="list-group-item filter-values filter-values-fecha_proxima_actualizacion {$collapsedClass_fecha_proxima_actualizacion} {$visibilityClass_fecha_proxima_actualizacion}">
+					{$fecha_proxima_actualizacion_filter}
+								
+					
+					
+					
+					
+							</li>
+				{END filterCtrlBlock_fecha_proxima_actualizacion}
+
+							{BEGIN filter_button_showmore_fecha_proxima_actualizacion}
+				<li class="list-group-item filter-show-more {$collapsedClass_fecha_proxima_actualizacion} {$showMoreBtnClass_fecha_proxima_actualizacion}">
+					<a class="filter-show-more-link filterShowMore_fecha_proxima_actualizacion" href="#">{$show_n_more_fecha_proxima_actualizacion}</a>
+				</li>
+				{END filter_button_showmore_fecha_proxima_actualizacion}
+			
+
+
+			
+
+							{BEGIN filter_button_multiselect_fecha_proxima_actualizacion}
+				<li class="filter-multiselect list-group-item filter-field-btn {$collapsedClass_fecha_proxima_actualizacion}">
+					<a href="#" class="filter-fecha_proxima_actualizacion-btn-multiselect filter-apply-fecha_proxima_actualizacion" {$filterbutton_attrs_fecha_proxima_actualizacion}>Multiselección</a>
+				</li>
+				{END filter_button_multiselect_fecha_proxima_actualizacion}
+			
+			</ul>
+		</div>
+		{END filter_control_fecha_proxima_actualizacion}
+				
+					
+		
+		{BEGIN filter_control_propabilidad_perder_caso}
+		<div class="panel panel-info filter-field filter-propabilidad_perder_caso-container">
+			<div class="panel-heading filter-expander">
+																	<span class="filter-indicator glyphicon glyphicon-triangle-top"></span>
+
+							<input class="filter-selectAll-propabilidad_perder_caso" type="checkbox" name="selectAll" {$selectAll_attrs_propabilidad_perder_caso} />
+			
+				{BEGIN clearLink_propabilidad_perder_caso}
+				<a href="#" class="filter-clear filter-clear-propabilidad_perder_caso" title="borrar" data-icon="remove" >
+				</a>
+				{END clearLink_propabilidad_perder_caso}
+				{$label rj_master propabilidad_perder_caso }			</div>
+
+			<ul class="list-group">
+				{BEGIN filterCtrlBlock_propabilidad_perder_caso}
+				<li class="list-group-item filter-values filter-values-propabilidad_perder_caso {$collapsedClass_propabilidad_perder_caso} {$visibilityClass_propabilidad_perder_caso}">
+					{$propabilidad_perder_caso_filter}
+								
+					
+					
+					
+					
+							</li>
+				{END filterCtrlBlock_propabilidad_perder_caso}
+
+							{BEGIN filter_button_showmore_propabilidad_perder_caso}
+				<li class="list-group-item filter-show-more {$collapsedClass_propabilidad_perder_caso} {$showMoreBtnClass_propabilidad_perder_caso}">
+					<a class="filter-show-more-link filterShowMore_propabilidad_perder_caso" href="#">{$show_n_more_propabilidad_perder_caso}</a>
+				</li>
+				{END filter_button_showmore_propabilidad_perder_caso}
+			
+
+
+			
+
+							{BEGIN filter_button_multiselect_propabilidad_perder_caso}
+				<li class="filter-multiselect list-group-item filter-field-btn {$collapsedClass_propabilidad_perder_caso}">
+					<a href="#" class="filter-propabilidad_perder_caso-btn-multiselect filter-apply-propabilidad_perder_caso" {$filterbutton_attrs_propabilidad_perder_caso}>Multiselección</a>
+				</li>
+				{END filter_button_multiselect_propabilidad_perder_caso}
+			
+			</ul>
+		</div>
+		{END filter_control_propabilidad_perder_caso}
+				
+					
+		
+		{BEGIN filter_control_etapa_judicial}
+		<div class="panel panel-info filter-field filter-etapa_judicial-container">
+			<div class="panel-heading filter-expander">
+																	<span class="filter-indicator glyphicon glyphicon-triangle-top"></span>
+
+							<input class="filter-selectAll-etapa_judicial" type="checkbox" name="selectAll" {$selectAll_attrs_etapa_judicial} />
+			
+				{BEGIN clearLink_etapa_judicial}
+				<a href="#" class="filter-clear filter-clear-etapa_judicial" title="borrar" data-icon="remove" >
+				</a>
+				{END clearLink_etapa_judicial}
+				{$label rj_master etapa_judicial }			</div>
+
+			<ul class="list-group">
+				{BEGIN filterCtrlBlock_etapa_judicial}
+				<li class="list-group-item filter-values filter-values-etapa_judicial {$collapsedClass_etapa_judicial} {$visibilityClass_etapa_judicial}">
+					{$etapa_judicial_filter}
+								
+					
+					
+					
+					
+							</li>
+				{END filterCtrlBlock_etapa_judicial}
+
+							{BEGIN filter_button_showmore_etapa_judicial}
+				<li class="list-group-item filter-show-more {$collapsedClass_etapa_judicial} {$showMoreBtnClass_etapa_judicial}">
+					<a class="filter-show-more-link filterShowMore_etapa_judicial" href="#">{$show_n_more_etapa_judicial}</a>
+				</li>
+				{END filter_button_showmore_etapa_judicial}
+			
+
+
+			
+
+							{BEGIN filter_button_multiselect_etapa_judicial}
+				<li class="filter-multiselect list-group-item filter-field-btn {$collapsedClass_etapa_judicial}">
+					<a href="#" class="filter-etapa_judicial-btn-multiselect filter-apply-etapa_judicial" {$filterbutton_attrs_etapa_judicial}>Multiselección</a>
+				</li>
+				{END filter_button_multiselect_etapa_judicial}
+			
+			</ul>
+		</div>
+		{END filter_control_etapa_judicial}
+				
+					
+		
+		{BEGIN filter_control_tipo_proceso_fk}
+		<div class="panel panel-info filter-field filter-tipo_proceso_fk-container">
+			<div class="panel-heading filter-expander">
+																	<span class="filter-indicator glyphicon glyphicon-triangle-top"></span>
+
+							<input class="filter-selectAll-tipo_proceso_fk" type="checkbox" name="selectAll" {$selectAll_attrs_tipo_proceso_fk} />
+			
+				{BEGIN clearLink_tipo_proceso_fk}
+				<a href="#" class="filter-clear filter-clear-tipo_proceso_fk" title="borrar" data-icon="remove" >
+				</a>
+				{END clearLink_tipo_proceso_fk}
+				{$label rj_master tipo_proceso_fk }			</div>
+
+			<ul class="list-group">
+				{BEGIN filterCtrlBlock_tipo_proceso_fk}
+				<li class="list-group-item filter-values filter-values-tipo_proceso_fk {$collapsedClass_tipo_proceso_fk} {$visibilityClass_tipo_proceso_fk}">
+					{$tipo_proceso_fk_filter}
+								
+					
+					
+					
+					
+							</li>
+				{END filterCtrlBlock_tipo_proceso_fk}
+
+							{BEGIN filter_button_showmore_tipo_proceso_fk}
+				<li class="list-group-item filter-show-more {$collapsedClass_tipo_proceso_fk} {$showMoreBtnClass_tipo_proceso_fk}">
+					<a class="filter-show-more-link filterShowMore_tipo_proceso_fk" href="#">{$show_n_more_tipo_proceso_fk}</a>
+				</li>
+				{END filter_button_showmore_tipo_proceso_fk}
+			
+
+
+			
+
+							{BEGIN filter_button_multiselect_tipo_proceso_fk}
+				<li class="filter-multiselect list-group-item filter-field-btn {$collapsedClass_tipo_proceso_fk}">
+					<a href="#" class="filter-tipo_proceso_fk-btn-multiselect filter-apply-tipo_proceso_fk" {$filterbutton_attrs_tipo_proceso_fk}>Multiselección</a>
+				</li>
+				{END filter_button_multiselect_tipo_proceso_fk}
+			
+			</ul>
+		</div>
+		{END filter_control_tipo_proceso_fk}
+		<!-- End Filter panel content -->
+	</div>
+</div>			</div>
+		
+    {END left_block}
+</div>				</div>
+			<div class="r-content-col" data-resize-left="leftbar">
+				<div data-resize-left="leftbar"  data-fixed class="r-topheader" data-resize-name="topbar">
+									{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="leftbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span class="navbar-form  navbar-header" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="collapse_button" {$item_collapse_button} data-topcell-item-type="collapse_button" >
+				<span data-itemtype="collapse_button" data-itemid="collapse_button" {$item_collapse_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Muestrame el menu" class="btn-link   
+	 glyphicon glyphicon-triangle-left" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="breadcrumb" {$item_breadcrumb} data-topcell-item-type="breadcrumb" >
+				{BEGIN breadcrumb}
+<ol class="breadcrumb" data-itemtype="breadcrumb" data-itemid="breadcrumb" {$item_breadcrumb} data-pageid="{$pageid}">
+<li ><a href="{$crumb_home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}
+  <li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}
+	<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}
+	<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumb}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="simple_search" {$item_simple_search} data-topcell-item-type="simple_search" >
+				<span data-itemtype="simple_search" data-itemid="simple_search" {$item_simple_search} data-pageid="{$pageid}" class="form-group">
+
+<div  class="input-group">
+{BEGIN searchform_text}
+	<input type="search" class="form-control" {$searchfor_attrs} size="25">
+{END searchform_text}
+	<span class="input-group-btn">
+	{BEGIN searchform_showall}
+				<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Mostrar todo">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	{END searchform_showall}
+
+	{BEGIN searchform_search}
+	<button {$searchbutton_attrs} class="btn btn-primary" >
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	{END searchform_search}
+	</span>
+</div>
+		
+</span>			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="list_options" {$item_list_options} data-topcell-item-type="list_options" >
+				<span data-itemtype="list_options" data-itemid="list_options" {$item_list_options} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-cog"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN exportselected_link}
+	<li data-itemtype="export_selected" data-itemid="export_selected" {$item_export_selected} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportselectedlink_attrs} {$exportselectedlink_span}  title="" >
+				
+		Exportar seleccionados		
+		</a>
+	</li>
+{END exportselected_link}
+							{BEGIN deleteselected_link}
+	<li data-itemtype="delete_selected" data-itemid="delete_selected" {$item_delete_selected} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span}  title="" >
+				
+		Borrar articulos seleccionados		
+		</a>
+	</li>
+{END deleteselected_link}
+							<li role="separator" class="divider"></li>								<li data-itemtype="advsearch_link" data-itemid="advsearch_link" {$item_advsearch_link} data-pageid="{$pageid}" data-small >
+				<a   href="rj_master_search.php{$stateLink_full}" {$advsearchlink_attrs}  title="" >
+				
+		Búsqueda avanzada		
+		</a>
+	</li>
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="show_search_panel" data-itemid="show_search_panel" {$item_show_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="showOptPanel{$id}"  title="" >
+				
+		Mostrar panel de búsqueda		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="hide_search_panel" data-itemid="hide_search_panel" {$item_hide_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="hideOptPanel{$id}"  title="" >
+				
+		Ocultar panel de búsqueda		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							<li role="separator" class="divider"></li>							{BEGIN export_link}
+	<li data-itemtype="export" data-itemid="export" {$item_export} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportlink_attrs}  title="" >
+				
+		Exportar resultados		
+		</a>
+	</li>
+{END export_link}
+					</ul>
+	</span>
+</span>
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Conectar			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+			{BEGIN userbutton_icon}							<span class="glyphicon glyphicon-user"></span>
+						{END userbutton_icon}{$userbutton_image}			{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN userinfo_link}
+	<li data-itemtype="userinfo_link" data-itemid="userinfo_link" {$item_userinfo_link} data-pageid="{$pageid}" data-small >
+				<a  href="userinfo.php"  title="" >
+				
+		Perfil del usuario		
+		</a>
+	</li>
+{END userinfo_link}
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Desconectarse		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN adminarea_link}
+	<li data-itemtype="adminarea_link" data-itemid="adminarea_link" {$item_adminarea_link} data-pageid="{$pageid}" data-small >
+				<a  href="admin_rights_list.php"  title="" >
+				
+		Area Admin		
+		</a>
+	</li>
+{END adminarea_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+						{$locking}
+				</div>	
+				<div class="r-body" data-resize-top="topbar" data-body-width="standard">
+					{$header}
+					<div class="r-top">
+									{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="leftbar" {$form_top} data-pageid="{$pageid}" >		
+	</div>		
+{END top_block}
+						</div>
+					<div class="r-above">
+										{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="leftbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class="			col-md-6
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		{BEGIN add_link}
+<span data-itemtype="add" data-itemid="add" {$item_add} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$addlink_attrs} href="rj_master_add.php{$stateLink_full}" >
+							Añadir nuevo			</a>
+</span>
+{END add_link}
+	 
+		{BEGIN deleteselected_link}
+<span data-itemtype="delete" data-itemid="delete" {$item_delete} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$deleteselectedlink_attrs} {$deleteselectedlink_span} disabled >
+							Borrar artículos seleccionados			</a>
+</span>
+{END deleteselected_link}
+			{END firstAboveGridCell}	
+	</div>			 
+				<div 
+	data-cellId="above-grid_c2" data-pageid="{$pageid}"	{$cell_above-grid_c2}
+	class="r-align-right			col-md-6
+	
+">
+		 
+		<span data-itemtype="details_found" data-itemid="details_found" {$item_details_found} data-pageid="{$pageid}" data-small >
+{$mlp_push}{$mlparam first var first_shown}{$mlparam last var last_shown}{$mlparam total var records_found}{mlang_message DISPLAYING}{$mlp_pop}</span>	 
+		<span data-itemtype="page_size" data-itemid="page_size" {$item_page_size} data-pageid="{$pageid}" >
+		{$recsPerPage}
+</span>	 
+		{BEGIN print_friendly}
+<span id="printpanelblock{$id}"  data-pageid="{$pageid}" {$printpanel_hiddenattr} data-itemtype="print_panel" data-itemid="print_panel" {$item_print_panel} data-pageid="{$pageid}">
+	<button title="Página para imprimir" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					<span class="glyphicon glyphicon-print"></span>
+				<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu pull-right">
+										 
+				 
+					<li class="container-fluid 
+										">
+									<div id="print_friendly_scope{$id}">
+	<div class="row">
+		<div class="col-md-4">
+			Rango:		</div>
+
+			 
+		{BEGIN print_friendly_all}
+		<div class="col-md-8">
+			<label for="printAll{$id}">
+				<input type="radio" id="printAll{$id}" data-href="rj_master_print.php?all=1&amp;{$crosstable_attrs}" name="printScope" >
+									Imprimir todas las páginas							</label>
+		</div>
+		{END print_friendly_all}
+		</div>
+		<div class="row">
+		<div class="col-md-4">&nbsp;</div>
+		<div class="col-md-8">
+			<label for="printPage{$id}">
+				<input name="printScope" id="printPage{$id}" type="radio" checked data-href="rj_master_print.php?{$crosstable_attrs}">
+				Imprimir esta página			</label>
+		</div>
+	</div>
+		
+		 
+	<div class="row">
+		<div class="col-md-4">
+			&nbsp;
+		</div>
+		<div class="col-md-8">
+			<label style="color: gray;" for="printSelection{$id}">
+			<input name="printScope" disabled="disabled" id="printSelection{$id}" type="radio" >
+			Imprimir la selección			</label>
+		</div>
+	</div>
+	</div>
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+										">
+									{BEGIN print_details}
+<div>
+	<label for="printDetailsToggler{$id}">
+		<input type="checkbox" id="printDetailsToggler{$id}">
+		Detalles de impresión	</label>
+	<div  id="printdetailstables{$id}" style="display:none;">
+											{BEGIN print_details_rj_master_audiencias}
+			<div>
+				<label for="printDetailsrj_master_audiencias{$id}">
+					<input type="checkbox" value="rj_master_audiencias" id="printDetailsrj_master_audiencias{$id}" checked>
+					Audiencias				</label>
+			</div>
+			{END print_details_rj_master_audiencias}
+														{BEGIN print_details_rj_master_anexos}
+			<div>
+				<label for="printDetailsrj_master_anexos{$id}">
+					<input type="checkbox" value="rj_master_anexos" id="printDetailsrj_master_anexos{$id}" checked>
+					Gestión anexos				</label>
+			</div>
+			{END print_details_rj_master_anexos}
+														{BEGIN print_details_rj_master_provision_contable}
+			<div>
+				<label for="printDetailsrj_master_provision_contable{$id}">
+					<input type="checkbox" value="rj_master_provision_contable" id="printDetailsrj_master_provision_contable{$id}" checked>
+					Provisión Contable				</label>
+			</div>
+			{END print_details_rj_master_provision_contable}
+						</div>
+</div>
+{END print_details}
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+										">
+									<div>
+	<label for="printPerPage{$id}">
+					Resultados por página							
+	</label>
+	<input type="number" id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">		
+</div>
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+					 text-center 					">
+									<span data-itemtype="print_button" data-itemid="print_button" {$item_print_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" id="print_friendly_button{$id}" >
+							Imprimir			</a>
+</span>
+				 
+					</li>
+															</ul>
+</span>
+{END print_friendly}
+		</div>					</div>
+	</div>		
+{END above-grid_block}
+						</div>
+					<div class="r-grid">
+										{BEGIN grid_block}
+{BEGIN grid_tabs}
+  <ul class="nav nav-tabs bsgrid_tabs">
+	{$grid_tabs_content}
+  </ul>
+{END grid_tabs}
+{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}	<style>
+@media screen and (max-width: 767px) {
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="id_oaj"]:before {
+		content: "{$label rj_master id_oaj}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="tipo_proceso_fk"]:before {
+		content: "{$label rj_master tipo_proceso_fk}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="num_proceso"]:before {
+		content: "{$label rj_master num_proceso}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="estado_id_fk"]:before {
+		content: "{$label rj_master estado_id_fk}";
+	}
+				[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="municipio_fk"]:before {
+		content: "{$label rj_master municipio_fk}";
+	}
+				[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="doc_demandante"]:before {
+		content: "{$label rj_master doc_demandante}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="nom_demandante"]:before {
+		content: "{$label rj_master nom_demandante}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="apoderado_demandante"]:before {
+		content: "{$label rj_master apoderado_demandante}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="nom_demandado"]:before {
+		content: "{$label rj_master nom_demandado}";
+	}
+				[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="fecha_presentacion_demanda"]:before {
+		content: "{$label rj_master fecha_presentacion_demanda}";
+	}
+				[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cuantia_pretension"]:before {
+		content: "{$label rj_master cuantia_pretension}";
+	}
+					[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="apoderado_oaj"]:before {
+		content: "{$label rj_master apoderado_oaj}";
+	}
+							[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="etapa_judicial"]:before {
+		content: "{$label rj_master etapa_judicial}";
+	}
+					[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="propabilidad_perder_caso"]:before {
+		content: "{$label rj_master propabilidad_perder_caso}";
+	}
+				[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="fecha_proxima_actualizacion"]:before {
+		content: "{$label rj_master fecha_proxima_actualizacion}";
+	}
+					[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="ekogui_id"]:before {
+		content: "{$label rj_master ekogui_id}";
+	}
+						[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="calidad"]:before {
+		content: "{$label rj_master calidad}";
+	}
+	}
+</style>
+<table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes} r-horizontal-grid  r-flexgrid rnr-b-grid rnr-gridtable" 
+	cellpadding="0" 
+	data-body-height="2"
+>
+						<thead>
+			{BEGIN grid_header}
+					
+		 
+						<tr {$rowattrs} {$row_grid_0} class="{$rowclass} 
+									{$gridHeader_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_headcell_icons}
+	<th
+	
+	{$cell_grid_headcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="rj_master_list"		data-control-cell
+	
+	>
+
+	
+	</th>
+	{END cellblock_grid_headcell_icons}
+				 
+					{BEGIN cellblock_grid_headcell_checkbox}
+	<th
+	
+	{$cell_grid_headcell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="rj_master_list"	
+		data-checkbox-cell
+	>
+
+	 
+		{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox_head" data-itemid="grid_checkbox_head" {$item_grid_checkbox_head} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkboxheader_attrs}>
+</span>
+{END checkbox_column}
+	
+	</th>
+	{END cellblock_grid_headcell_checkbox}
+				 
+					{BEGIN cellblock_grid_headcell_details}
+	<th
+	
+	{$cell_grid_headcell_details}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_details" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</th>
+	{END cellblock_grid_headcell_details}
+				 
+					{BEGIN cellblock_grid_headcell_field}
+	<th
+	
+	{$cell_grid_headcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$id_oaj_class}
+			"
+
+			data-field="id_oaj"
+	
+	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_oaj_fieldheadercolumn}
+	{BEGIN id_oaj_fieldheader}
+	<SPAN {$id_oaj_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_oaj" data-fieldname="id_oaj">
+	{$label rj_master id_oaj }	{$arrow_icon_id_oaj}
+	</SPAN>
+	{END id_oaj_fieldheader}
+{END id_oaj_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field}
+				 
+					{BEGIN cellblock_grid_headcell_field1}
+	<th
+	
+	{$cell_grid_headcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$tipo_proceso_fk_class}
+			"
+
+			data-field="tipo_proceso_fk"
+	
+	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tipo_proceso_fk_fieldheadercolumn}
+	{BEGIN tipo_proceso_fk_fieldheader}
+	<SPAN {$tipo_proceso_fk_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tipo_proceso_fk" data-fieldname="tipo_proceso_fk">
+	{$label rj_master tipo_proceso_fk }	{$arrow_icon_tipo_proceso_fk}
+	</SPAN>
+	{END tipo_proceso_fk_fieldheader}
+{END tipo_proceso_fk_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field1}
+				 
+					{BEGIN cellblock_grid_headcell_field2}
+	<th
+	
+	{$cell_grid_headcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$num_proceso_class}
+			"
+
+			data-field="num_proceso"
+	
+	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN num_proceso_fieldheadercolumn}
+	{BEGIN num_proceso_fieldheader}
+	<SPAN {$num_proceso_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="num_proceso" data-fieldname="num_proceso">
+	{$label rj_master num_proceso }	{$arrow_icon_num_proceso}
+	</SPAN>
+	{END num_proceso_fieldheader}
+{END num_proceso_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field2}
+				 
+					{BEGIN cellblock_grid_headcell_field3}
+	<th
+	
+	{$cell_grid_headcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ekogui_id_class}
+			"
+
+			data-field="ekogui_id"
+	
+	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ekogui_id_fieldheadercolumn}
+	{BEGIN ekogui_id_fieldheader}
+	<SPAN {$ekogui_id_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field31" {$item_simple_grid_field31} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ekogui_id" data-fieldname="ekogui_id">
+	{$label rj_master ekogui_id }	{$arrow_icon_ekogui_id}
+	</SPAN>
+	{END ekogui_id_fieldheader}
+{END ekogui_id_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field3}
+				 
+					{BEGIN cellblock_grid_headcell_field4}
+	<th
+	
+	{$cell_grid_headcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$estado_id_fk_class}
+			"
+
+			data-field="estado_id_fk"
+	
+	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN estado_id_fk_fieldheadercolumn}
+	{BEGIN estado_id_fk_fieldheader}
+	<SPAN {$estado_id_fk_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="estado_id_fk" data-fieldname="estado_id_fk">
+	{$label rj_master estado_id_fk }	{$arrow_icon_estado_id_fk}
+	</SPAN>
+	{END estado_id_fk_fieldheader}
+{END estado_id_fk_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field4}
+				 
+					{BEGIN cellblock_grid_headcell_field5}
+	<th
+	
+	{$cell_grid_headcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$calidad_class}
+			"
+
+			data-field="calidad"
+	
+	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN calidad_fieldheadercolumn}
+	{BEGIN calidad_fieldheader}
+	<SPAN {$calidad_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="grid_field1" {$item_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="calidad" data-fieldname="calidad">
+	{$label rj_master calidad }	{$arrow_icon_calidad}
+	</SPAN>
+	{END calidad_fieldheader}
+{END calidad_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field5}
+				 
+					{BEGIN cellblock_grid_headcell_field6}
+	<th
+	
+	{$cell_grid_headcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$municipio_fk_class}
+			"
+
+			data-field="municipio_fk"
+	
+	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN municipio_fk_fieldheadercolumn}
+	{BEGIN municipio_fk_fieldheader}
+	<SPAN {$municipio_fk_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="municipio_fk" data-fieldname="municipio_fk">
+	{$label rj_master municipio_fk }	{$arrow_icon_municipio_fk}
+	</SPAN>
+	{END municipio_fk_fieldheader}
+{END municipio_fk_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field6}
+				 
+					{BEGIN cellblock_grid_headcell_field7}
+	<th
+	
+	{$cell_grid_headcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$doc_demandante_class}
+			"
+
+			data-field="doc_demandante"
+	
+	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN doc_demandante_fieldheadercolumn}
+	{BEGIN doc_demandante_fieldheader}
+	<SPAN {$doc_demandante_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="doc_demandante" data-fieldname="doc_demandante">
+	{$label rj_master doc_demandante }	{$arrow_icon_doc_demandante}
+	</SPAN>
+	{END doc_demandante_fieldheader}
+{END doc_demandante_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field7}
+				 
+					{BEGIN cellblock_grid_headcell_field8}
+	<th
+	
+	{$cell_grid_headcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nom_demandante_class}
+			"
+
+			data-field="nom_demandante"
+	
+	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nom_demandante_fieldheadercolumn}
+	{BEGIN nom_demandante_fieldheader}
+	<SPAN {$nom_demandante_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nom_demandante" data-fieldname="nom_demandante">
+	{$label rj_master nom_demandante }	{$arrow_icon_nom_demandante}
+	</SPAN>
+	{END nom_demandante_fieldheader}
+{END nom_demandante_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field8}
+				 
+					{BEGIN cellblock_grid_headcell_field9}
+	<th
+	
+	{$cell_grid_headcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$apoderado_demandante_class}
+			"
+
+			data-field="apoderado_demandante"
+	
+	data-cellId="grid_headcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN apoderado_demandante_fieldheadercolumn}
+	{BEGIN apoderado_demandante_fieldheader}
+	<SPAN {$apoderado_demandante_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="apoderado_demandante" data-fieldname="apoderado_demandante">
+	{$label rj_master apoderado_demandante }	{$arrow_icon_apoderado_demandante}
+	</SPAN>
+	{END apoderado_demandante_fieldheader}
+{END apoderado_demandante_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field9}
+				 
+					{BEGIN cellblock_grid_headcell_field10}
+	<th
+	
+	{$cell_grid_headcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nom_demandado_class}
+			"
+
+			data-field="nom_demandado"
+	
+	data-cellId="grid_headcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nom_demandado_fieldheadercolumn}
+	{BEGIN nom_demandado_fieldheader}
+	<SPAN {$nom_demandado_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field20" {$item_simple_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nom_demandado" data-fieldname="nom_demandado">
+	{$label rj_master nom_demandado }	{$arrow_icon_nom_demandado}
+	</SPAN>
+	{END nom_demandado_fieldheader}
+{END nom_demandado_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field10}
+				 
+					{BEGIN cellblock_grid_headcell_field11}
+	<th
+	
+	{$cell_grid_headcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$fecha_presentacion_demanda_class}
+			"
+
+			data-field="fecha_presentacion_demanda"
+	
+	data-cellId="grid_headcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN fecha_presentacion_demanda_fieldheadercolumn}
+	{BEGIN fecha_presentacion_demanda_fieldheader}
+	<SPAN {$fecha_presentacion_demanda_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field21" {$item_simple_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fecha_presentacion_demanda" data-fieldname="fecha_presentacion_demanda">
+	{$label rj_master fecha_presentacion_demanda }	{$arrow_icon_fecha_presentacion_demanda}
+	</SPAN>
+	{END fecha_presentacion_demanda_fieldheader}
+{END fecha_presentacion_demanda_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field11}
+				 
+					{BEGIN cellblock_grid_headcell_field12}
+	<th
+	
+	{$cell_grid_headcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cuantia_pretension_class}
+			"
+
+			data-field="cuantia_pretension"
+	
+	data-cellId="grid_headcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cuantia_pretension_fieldheadercolumn}
+	{BEGIN cuantia_pretension_fieldheader}
+	<SPAN {$cuantia_pretension_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field23" {$item_simple_grid_field23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cuantia_pretension" data-fieldname="cuantia_pretension">
+	{$label rj_master cuantia_pretension }	{$arrow_icon_cuantia_pretension}
+	</SPAN>
+	{END cuantia_pretension_fieldheader}
+{END cuantia_pretension_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field12}
+				 
+					{BEGIN cellblock_grid_headcell_field13}
+	<th
+	
+	{$cell_grid_headcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$apoderado_oaj_class}
+			"
+
+			data-field="apoderado_oaj"
+	
+	data-cellId="grid_headcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN apoderado_oaj_fieldheadercolumn}
+	{BEGIN apoderado_oaj_fieldheader}
+	<SPAN {$apoderado_oaj_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field24" {$item_simple_grid_field24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="apoderado_oaj" data-fieldname="apoderado_oaj">
+	{$label rj_master apoderado_oaj }	{$arrow_icon_apoderado_oaj}
+	</SPAN>
+	{END apoderado_oaj_fieldheader}
+{END apoderado_oaj_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field13}
+				 
+					{BEGIN cellblock_grid_headcell_field14}
+	<th
+	
+	{$cell_grid_headcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$etapa_judicial_class}
+			"
+
+			data-field="etapa_judicial"
+	
+	data-cellId="grid_headcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN etapa_judicial_fieldheadercolumn}
+	{BEGIN etapa_judicial_fieldheader}
+	<SPAN {$etapa_judicial_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field26" {$item_simple_grid_field26} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="etapa_judicial" data-fieldname="etapa_judicial">
+	{$label rj_master etapa_judicial }	{$arrow_icon_etapa_judicial}
+	</SPAN>
+	{END etapa_judicial_fieldheader}
+{END etapa_judicial_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field14}
+				 
+					{BEGIN cellblock_grid_headcell_field15}
+	<th
+	
+	{$cell_grid_headcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$propabilidad_perder_caso_class}
+			"
+
+			data-field="propabilidad_perder_caso"
+	
+	data-cellId="grid_headcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN propabilidad_perder_caso_fieldheadercolumn}
+	{BEGIN propabilidad_perder_caso_fieldheader}
+	<SPAN {$propabilidad_perder_caso_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field28" {$item_simple_grid_field28} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="propabilidad_perder_caso" data-fieldname="propabilidad_perder_caso">
+	{$label rj_master propabilidad_perder_caso }	{$arrow_icon_propabilidad_perder_caso}
+	</SPAN>
+	{END propabilidad_perder_caso_fieldheader}
+{END propabilidad_perder_caso_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field15}
+				 
+					{BEGIN cellblock_grid_headcell_field16}
+	<th
+	
+	{$cell_grid_headcell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$fecha_proxima_actualizacion_class}
+			"
+
+			data-field="fecha_proxima_actualizacion"
+	
+	data-cellId="grid_headcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN fecha_proxima_actualizacion_fieldheadercolumn}
+	{BEGIN fecha_proxima_actualizacion_fieldheader}
+	<SPAN {$fecha_proxima_actualizacion_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field29" {$item_simple_grid_field29} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fecha_proxima_actualizacion" data-fieldname="fecha_proxima_actualizacion">
+	{$label rj_master fecha_proxima_actualizacion }	{$arrow_icon_fecha_proxima_actualizacion}
+	</SPAN>
+	{END fecha_proxima_actualizacion_fieldheader}
+{END fecha_proxima_actualizacion_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field16}
+							</tr>
+					 
+					 
+					 
+					
+					{END grid_header}
+			</thead>
+															<tbody>
+					{BEGIN grid_row}
+									
+		 
+					 
+						<tr {$rowattrs} {$row_grid_1} class="{$rowclass} 
+								
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_cell_icons}
+	<td
+	
+	{$cell_grid_cell_icons}
+	{$recordattrs}
+	class="
+					"
+
+	
+	data-cellId="grid_cell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="rj_master_list"		data-control-cell
+	
+	>
+
+	 
+		{BEGIN edit_column}
+{BEGIN edit_link}
+<span data-itemtype="grid_edit" data-itemid="grid_edit" {$item_grid_edit} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Editar" class="btn btn-success   
+	" href="rj_master_edit.php?{$editlink}" {$editlink_attrs} title="Editar" >
+					<span class="glyphicon glyphicon-pencil"></span>
+							Expediente			</a>
+</span>
+{END edit_link}
+{END edit_column}
+	 
+		{BEGIN view_column}
+{BEGIN view_link}
+<span data-itemtype="grid_view" data-itemid="grid_view" {$item_grid_view} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Ver registro" class="btn btn-default   
+	" href="rj_master_view.php?{$editlink}" {$viewlink_attrs} title="Ver" >
+					<span class="glyphicon glyphicon-search"></span>
+										</a>
+</span>
+{END view_link}
+{END view_column}
+	
+	</td>
+	{END cellblock_grid_cell_icons}
+				 
+					{BEGIN cellblock_grid_cell_checkbox}
+	<td
+	
+	{$cell_grid_cell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"		data-control-cell
+	
+		data-checkbox-cell
+	>
+
+	 
+		{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox" data-itemid="grid_checkbox" {$item_grid_checkbox} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkbox_attrs}
+		>
+</span>	
+{END checkbox_column}
+	
+	</td>
+	{END cellblock_grid_cell_checkbox}
+				 
+					{BEGIN cellblock_grid_cell_details}
+	<td
+	
+	{$cell_grid_cell_details}
+	{$recordattrs}
+	class="
+					"
+
+	
+	data-cellId="grid_cell_details" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="rj_master_list"		data-control-cell
+	
+	>
+
+	 
+		{BEGIN dtables_link}
+	<a 
+		data-itemtype="grid_alldetails_link" data-itemid="grid_alldetails_link" {$item_grid_alldetails_link} data-pageid="{$pageid}" data-record-id="{$recId}" 
+		{$dtables_link_attrs} 
+		class="{$dtables_link_class}" 
+		title="Mostrar detalles"
+				
+	>
+					<span class="glyphicon glyphicon-th-list"></span>
+					</a>
+{END dtables_link}
+	 
+		
+		
+	{BEGIN rj_master_anexos_dtable_link}
+	<span data-itemtype="grid_details_link" data-itemid="grid_details_link1" {$item_grid_details_link1} data-pageid="{$pageid}" data-record-id="{$recId}">
+	<a  {$rj_master_anexos_link_attrs} data-short-details="rj_master_anexos"
+		class="{$rj_master_anexos_dlink_class}" 
+		title="{$caption rj_master_anexos }"			>
+								
+									{BEGIN rj_master_anexos_childcount}
+				<span class="details-badge badge rj_master_anexos_badge" {$rj_master_anexos_childnumber_attr}>
+					{$rj_master_anexos_childnumber}				
+				</span>
+				{END rj_master_anexos_childcount}
+						</a>
+	</span>
+	{END rj_master_anexos_dtable_link}
+
+
+	 
+		
+		
+	{BEGIN rj_master_audiencias_dtable_link}
+	<span data-itemtype="grid_details_link" data-itemid="grid_details_link" {$item_grid_details_link} data-pageid="{$pageid}" data-record-id="{$recId}">
+	<a  {$rj_master_audiencias_link_attrs} data-short-details="rj_master_audiencias"
+		class="{$rj_master_audiencias_dlink_class}" 
+		title="{$caption rj_master_audiencias }"			>
+								
+									{BEGIN rj_master_audiencias_childcount}
+				<span class="details-badge badge rj_master_audiencias_badge" {$rj_master_audiencias_childnumber_attr}>
+					{$rj_master_audiencias_childnumber}				
+				</span>
+				{END rj_master_audiencias_childcount}
+						</a>
+	</span>
+	{END rj_master_audiencias_dtable_link}
+
+
+	 
+		
+		
+	{BEGIN rj_master_provision_contable_dtable_link}
+	<span data-itemtype="grid_details_link" data-itemid="grid_details_link2" {$item_grid_details_link2} data-pageid="{$pageid}" data-record-id="{$recId}">
+	<a  {$rj_master_provision_contable_link_attrs} data-short-details="rj_master_provision_contable"
+		class="{$rj_master_provision_contable_dlink_class}" 
+		title="{$caption rj_master_provision_contable }"			>
+								
+									{BEGIN rj_master_provision_contable_childcount}
+				<span class="details-badge badge rj_master_provision_contable_badge" {$rj_master_provision_contable_childnumber_attr}>
+					{$rj_master_provision_contable_childnumber}				
+				</span>
+				{END rj_master_provision_contable_childcount}
+						</a>
+	</span>
+	{END rj_master_provision_contable_dtable_link}
+
+
+	
+	</td>
+	{END cellblock_grid_cell_details}
+				 
+					{BEGIN cellblock_grid_cell_field}
+	<td
+	
+	{$cell_grid_cell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$id_oaj_class}
+			"
+
+			data-field="id_oaj"
+	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_oaj_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_oaj" data-fieldname="id_oaj" data-default-width >
+{$id_oaj_value}
+</span>
+{END id_oaj_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field}
+				 
+					{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$tipo_proceso_fk_class}
+			"
+
+			data-field="tipo_proceso_fk"
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tipo_proceso_fk_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tipo_proceso_fk" data-fieldname="tipo_proceso_fk" data-default-width >
+{$tipo_proceso_fk_value}
+</span>
+{END tipo_proceso_fk_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field1}
+				 
+					{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$num_proceso_class}
+			"
+
+			data-field="num_proceso"
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN num_proceso_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="num_proceso" data-fieldname="num_proceso" data-default-width >
+{$num_proceso_value}
+</span>
+{END num_proceso_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field2}
+				 
+					{BEGIN cellblock_grid_cell_field3}
+	<td
+	
+	{$cell_grid_cell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$ekogui_id_class}
+			"
+
+			data-field="ekogui_id"
+	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ekogui_id_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field30" {$item_simple_grid_field30} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ekogui_id" data-fieldname="ekogui_id" data-default-width >
+{$ekogui_id_value}
+</span>
+{END ekogui_id_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field3}
+				 
+					{BEGIN cellblock_grid_cell_field4}
+	<td
+	
+	{$cell_grid_cell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$estado_id_fk_class}
+			"
+
+			data-field="estado_id_fk"
+	
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN estado_id_fk_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="estado_id_fk" data-fieldname="estado_id_fk" data-default-width >
+{$estado_id_fk_value}
+</span>
+{END estado_id_fk_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field4}
+				 
+					{BEGIN cellblock_grid_cell_field5}
+	<td
+	
+	{$cell_grid_cell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$calidad_class}
+			"
+
+			data-field="calidad"
+	
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN calidad_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field" {$item_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="calidad" data-fieldname="calidad" data-default-width >
+{$calidad_value}
+</span>
+{END calidad_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field5}
+				 
+					{BEGIN cellblock_grid_cell_field6}
+	<td
+	
+	{$cell_grid_cell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$municipio_fk_class}
+			"
+
+			data-field="municipio_fk"
+	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN municipio_fk_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="municipio_fk" data-fieldname="municipio_fk" data-default-width >
+{$municipio_fk_value}
+</span>
+{END municipio_fk_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field6}
+				 
+					{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$doc_demandante_class}
+			"
+
+			data-field="doc_demandante"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN doc_demandante_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="doc_demandante" data-fieldname="doc_demandante" data-default-width >
+{$doc_demandante_value}
+</span>
+{END doc_demandante_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
+				 
+					{BEGIN cellblock_grid_cell_field8}
+	<td
+	
+	{$cell_grid_cell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nom_demandante_class}
+			"
+
+			data-field="nom_demandante"
+	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nom_demandante_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nom_demandante" data-fieldname="nom_demandante" data-default-width >
+{$nom_demandante_value}
+</span>
+{END nom_demandante_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field8}
+				 
+					{BEGIN cellblock_grid_cell_field9}
+	<td
+	
+	{$cell_grid_cell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$apoderado_demandante_class}
+			"
+
+			data-field="apoderado_demandante"
+	
+	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN apoderado_demandante_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="apoderado_demandante" data-fieldname="apoderado_demandante" data-default-width >
+{$apoderado_demandante_value}
+</span>
+{END apoderado_demandante_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field9}
+				 
+					{BEGIN cellblock_grid_cell_field10}
+	<td
+	
+	{$cell_grid_cell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nom_demandado_class}
+			"
+
+			data-field="nom_demandado"
+	
+	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nom_demandado_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nom_demandado" data-fieldname="nom_demandado" data-default-width >
+{$nom_demandado_value}
+</span>
+{END nom_demandado_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field10}
+				 
+					{BEGIN cellblock_grid_cell_field11}
+	<td
+	
+	{$cell_grid_cell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$fecha_presentacion_demanda_class}
+			"
+
+			data-field="fecha_presentacion_demanda"
+	
+	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN fecha_presentacion_demanda_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fecha_presentacion_demanda" data-fieldname="fecha_presentacion_demanda" data-default-width >
+{$fecha_presentacion_demanda_value}
+</span>
+{END fecha_presentacion_demanda_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field11}
+				 
+					{BEGIN cellblock_grid_cell_field12}
+	<td
+	
+	{$cell_grid_cell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cuantia_pretension_class}
+			"
+
+			data-field="cuantia_pretension"
+	
+	data-cellId="grid_cell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cuantia_pretension_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cuantia_pretension" data-fieldname="cuantia_pretension" data-default-width >
+{$cuantia_pretension_value}
+</span>
+{END cuantia_pretension_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field12}
+				 
+					{BEGIN cellblock_grid_cell_field13}
+	<td
+	
+	{$cell_grid_cell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$apoderado_oaj_class}
+			"
+
+			data-field="apoderado_oaj"
+	
+	data-cellId="grid_cell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN apoderado_oaj_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="apoderado_oaj" data-fieldname="apoderado_oaj" data-default-width >
+{$apoderado_oaj_value}
+</span>
+{END apoderado_oaj_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field13}
+				 
+					{BEGIN cellblock_grid_cell_field14}
+	<td
+	
+	{$cell_grid_cell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$etapa_judicial_class}
+			"
+
+			data-field="etapa_judicial"
+	
+	data-cellId="grid_cell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN etapa_judicial_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="etapa_judicial" data-fieldname="etapa_judicial" data-default-width >
+{$etapa_judicial_value}
+</span>
+{END etapa_judicial_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field14}
+				 
+					{BEGIN cellblock_grid_cell_field15}
+	<td
+	
+	{$cell_grid_cell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$propabilidad_perder_caso_class}
+			"
+
+			data-field="propabilidad_perder_caso"
+	
+	data-cellId="grid_cell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN propabilidad_perder_caso_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field25" {$item_simple_grid_field25} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="propabilidad_perder_caso" data-fieldname="propabilidad_perder_caso" data-default-width >
+{$propabilidad_perder_caso_value}
+</span>
+{END propabilidad_perder_caso_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field15}
+				 
+					{BEGIN cellblock_grid_cell_field16}
+	<td
+	
+	{$cell_grid_cell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$fecha_proxima_actualizacion_class}
+			"
+
+			data-field="fecha_proxima_actualizacion"
+	
+	data-cellId="grid_cell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN fecha_proxima_actualizacion_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field27" {$item_simple_grid_field27} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fecha_proxima_actualizacion" data-fieldname="fecha_proxima_actualizacion" data-default-width >
+{$fecha_proxima_actualizacion_value}
+</span>
+{END fecha_proxima_actualizacion_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field16}
+							</tr>
+					 
+						<tr {$rowattrs} {$row_grid_2} class="{$rowclass} 
+								
+							">
+				 
+					{BEGIN cellblock_grid_cell_dpreview}
+	<td
+	
+	{$cell_grid_cell_dpreview}
+	{$recordattrs}
+	class="
+					"
+
+	
+	data-cellId="grid_cell_dpreview" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+					<div data-itemtype="details_preview" data-itemid="details_preview1" {$item_details_preview1} data-pageid="{$pageid}" data-record-id="{$recId}" 
+	data-orders="rj_master_anexos,rj_master_audiencias,rj_master_provision_contable"
+			data-details-rj_master_anexos			data-details-rj_master_audiencias			data-details-rj_master_provision_contable	>
+		<span data-details-inside data-short-table="rj_master_anexos">
+			</span>
+		<span data-details-inside data-short-table="rj_master_audiencias">
+			</span>
+		<span data-details-inside data-short-table="rj_master_provision_contable">
+			</span>
+		<div data-details-preview>
+	</div>
+</div>
+	 
+			 
+			
+	</td>
+	{END cellblock_grid_cell_dpreview}
+							</tr>
+					 
+					
+											{END grid_row}
+					</tbody>
+													<tfoot>
+					
+		 
+					 
+					 
+					 
+						<tr {$rowattrs} {$row_grid_3} class="{$rowclass} 
+									{$gridFooter_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_footcell_icons}
+	<td
+	
+	{$cell_grid_footcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_icons}
+				 
+					{BEGIN cellblock_grid_footcell_checkbox}
+	<td
+	
+	{$cell_grid_footcell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_checkbox}
+				 
+					{BEGIN cellblock_grid_footcell_details}
+	<td
+	
+	{$cell_grid_footcell_details}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_details" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_details}
+				 
+					{BEGIN cellblock_grid_footcell_field}
+	<td
+	
+	{$cell_grid_footcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="rj_master_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field}
+				 
+					{BEGIN cellblock_grid_footcell_field1}
+	<td
+	
+	{$cell_grid_footcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="rj_master_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field1}
+				 
+					{BEGIN cellblock_grid_footcell_field2}
+	<td
+	
+	{$cell_grid_footcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="rj_master_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field2}
+				 
+					{BEGIN cellblock_grid_footcell_field3}
+	<td
+	
+	{$cell_grid_footcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="rj_master_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field3}
+				 
+					{BEGIN cellblock_grid_footcell_field4}
+	<td
+	
+	{$cell_grid_footcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="rj_master_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field4}
+				 
+					{BEGIN cellblock_grid_footcell_field5}
+	<td
+	
+	{$cell_grid_footcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="rj_master_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field5}
+				 
+					{BEGIN cellblock_grid_footcell_field6}
+	<td
+	
+	{$cell_grid_footcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="rj_master_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field6}
+				 
+					{BEGIN cellblock_grid_footcell_field7}
+	<td
+	
+	{$cell_grid_footcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="rj_master_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field7}
+				 
+					{BEGIN cellblock_grid_footcell_field8}
+	<td
+	
+	{$cell_grid_footcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="rj_master_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field8}
+				 
+					{BEGIN cellblock_grid_footcell_field9}
+	<td
+	
+	{$cell_grid_footcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="rj_master_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field9}
+				 
+					{BEGIN cellblock_grid_footcell_field10}
+	<td
+	
+	{$cell_grid_footcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="rj_master_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field10}
+				 
+					{BEGIN cellblock_grid_footcell_field11}
+	<td
+	
+	{$cell_grid_footcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="rj_master_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field11}
+				 
+					{BEGIN cellblock_grid_footcell_field12}
+	<td
+	
+	{$cell_grid_footcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="rj_master_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field12}
+				 
+					{BEGIN cellblock_grid_footcell_field13}
+	<td
+	
+	{$cell_grid_footcell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="rj_master_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field13}
+				 
+					{BEGIN cellblock_grid_footcell_field14}
+	<td
+	
+	{$cell_grid_footcell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="rj_master_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field14}
+				 
+					{BEGIN cellblock_grid_footcell_field15}
+	<td
+	
+	{$cell_grid_footcell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="rj_master_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field15}
+				 
+					{BEGIN cellblock_grid_footcell_field16}
+	<td
+	
+	{$cell_grid_footcell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="rj_master_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field16}
+							</tr>
+					
+					</tfoot>
+				</table>
+{END grid_block}
+						</div>
+					<div class="r-below">
+										{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="leftbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="r-align-center r-ori-vert			col-md-12
+	
+">
+		 
+		{BEGIN pagination_block}
+<span data-itemtype="pagination" data-itemid="pagination" {$item_pagination} data-pageid="{$pageid}" >
+{$pagination}
+</span>
+{END pagination_block}
+		</div>					</div>
+	</div>		
+{END below-grid_block}
+						</div>
+					{$footer}
+				</div>	
+			</div>	
+			<div class="r-body-shadow">
+			</div>
+		</div>
+	{END body}
+	</body>
+</html>

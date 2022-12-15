@@ -1,0 +1,1156 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+		
+	</head>
+
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="2"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="add_header" data-itemid="add_header" {$item_add_header} data-pageid="{$pageid}" >{$pagetitlelabel cc_coactivo add}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="2"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		{BEGIN message_block}
+<div data-itemtype="add_message" data-itemid="add_message" {$item_add_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN message_back_button}
+		
+	<button class="btn btn-sm btn-default" {$backbutton_attrs}>Volver a la lista</button>
+	{END message_back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>Ver</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>Editar</button>
+{END edit_page_button}
+</div>
+</div>
+{END message_block}	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<div class="panel with-tabs panel-default form-tabs" data-itemtype="tabs" data-itemid="tabs" {$item_tabs} data-pageid="{$pageid}">
+	<div class="panel-heading">
+		<ul class="nav nav-tabs" role="tablist">
+									<li role="presentation" class="active">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section{$pageid}">
+					Paso 1				</a>
+			</li>
+										<li role="presentation" class="">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section1{$pageid}">
+					Paso 2				</a>
+			</li>
+									</ul>
+	</div>
+	<div class="panel-body">
+		<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="tab_section{$pageid}"> 
+			{BEGIN section_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section" id="form_section_{$pageid}" data-makeup="small" {$form_section} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="3"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_section_0} >
+										
+
+{BEGIN cellblock_section_c1}
+<td
+	{$cell_section_c1}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c1" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN EXPEDIENTE_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_EXPEDIENTE}  r-vertical-field" 
+	data-signal-error-for="EXPEDIENTE{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="EXPEDIENTE" data-fieldname="EXPEDIENTE" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_EXPEDIENTE}">
+		{BEGIN EXPEDIENTE_label}{$label cc_coactivo EXPEDIENTE }{END EXPEDIENTE_label}
+	</label>
+	<div class="r-edit-field">
+		{$EXPEDIENTE_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="EXPEDIENTE">
+		<div class="text-muted" >
+		{$tooltip cc_coactivo EXPEDIENTE }		</div>
+	</div>
+</div>
+
+
+{END EXPEDIENTE_fieldblock}
+	
+								</td>
+			{END cellblock_section_c1}
+			 
+																
+
+{BEGIN cellblock_section_c}
+<td
+	{$cell_section_c}
+	class=" r-ori-vert"
+	
+			data-single
+			
+	ocolspan="2"		data-cellId="section_c" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN EXPEDIENTEREL_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_EXPEDIENTEREL}  r-vertical-field" 
+	data-signal-error-for="EXPEDIENTEREL{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="EXPEDIENTEREL" data-fieldname="EXPEDIENTEREL" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_EXPEDIENTEREL}">
+		{BEGIN EXPEDIENTEREL_label}{$label cc_coactivo EXPEDIENTEREL }{END EXPEDIENTEREL_label}
+	</label>
+	<div class="r-edit-field">
+		{$EXPEDIENTEREL_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="EXPEDIENTEREL">
+		<div class="text-muted" >
+		{$tooltip cc_coactivo EXPEDIENTEREL }		</div>
+	</div>
+</div>
+
+
+{END EXPEDIENTEREL_fieldblock}
+	
+								</td>
+			{END cellblock_section_c}
+								</tr>
+	 
+	 
+														<tr {$row_section_1} >
+										
+
+{BEGIN cellblock_section_c14}
+<td
+	{$cell_section_c14}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c14" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN TIPODOCUMENTO_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_TIPODOCUMENTO}  r-vertical-field" 
+	data-signal-error-for="TIPODOCUMENTO{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="TIPODOCUMENTO" data-fieldname="TIPODOCUMENTO" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_TIPODOCUMENTO}">
+		{BEGIN TIPODOCUMENTO_label}{$label cc_coactivo TIPODOCUMENTO }{END TIPODOCUMENTO_label}
+	</label>
+	<div class="r-edit-field">
+		{$TIPODOCUMENTO_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="TIPODOCUMENTO">
+		<div class="text-muted" >
+		{$tooltip cc_coactivo TIPODOCUMENTO }		</div>
+	</div>
+</div>
+
+
+{END TIPODOCUMENTO_fieldblock}
+	
+								</td>
+			{END cellblock_section_c14}
+			 
+																
+
+{BEGIN cellblock_section_c15}
+<td
+	{$cell_section_c15}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c15" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN NIT_CEDULA_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_NIT_CEDULA}  r-vertical-field" 
+	data-signal-error-for="NIT_CEDULA{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="NIT_CEDULA" data-fieldname="NIT_CEDULA" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_NIT_CEDULA}">
+		{BEGIN NIT_CEDULA_label}{$label cc_coactivo NIT_CEDULA }{END NIT_CEDULA_label}
+	</label>
+	<div class="r-edit-field">
+		{$NIT_CEDULA_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="NIT_CEDULA">
+		<div class="text-muted" >
+		{$tooltip cc_coactivo NIT_CEDULA }		</div>
+	</div>
+</div>
+
+
+{END NIT_CEDULA_fieldblock}
+	
+								</td>
+			{END cellblock_section_c15}
+			 
+																
+
+{BEGIN cellblock_section_c16}
+<td
+	{$cell_section_c16}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c16" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN DV_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_DV}  r-vertical-field" 
+	data-signal-error-for="DV{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="DV" data-fieldname="DV" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_DV}">
+		{BEGIN DV_label}{$label cc_coactivo DV }{END DV_label}
+	</label>
+	<div class="r-edit-field">
+		{$DV_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="DV">
+		<div class="text-muted" >
+		{$tooltip cc_coactivo DV }		</div>
+	</div>
+</div>
+
+
+{END DV_fieldblock}
+	
+								</td>
+			{END cellblock_section_c16}
+								</tr>
+	 
+	 
+														<tr {$row_section_2} >
+										
+
+{BEGIN cellblock_section_c13}
+<td
+	{$cell_section_c13}
+	class=" r-ori-vert"
+	
+			data-single
+			
+	ocolspan="3"		data-cellId="section_c13" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN NOMBRE_DE_EMPRESA_EN_EXPEDIENTE_DE_COBRO_COACTIVO_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_NOMBRE_DE_EMPRESA_EN_EXPEDIENTE_DE_COBRO_COACTIVO}  r-vertical-field" 
+	data-signal-error-for="NOMBRE_DE_EMPRESA_EN_EXPEDIENTE_DE_COBRO_COACTIVO{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="NOMBRE_DE_EMPRESA_EN_EXPEDIENTE_DE_COBRO_COACTIVO" data-fieldname="NOMBRE DE EMPRESA EN EXPEDIENTE DE COBRO COACTIVO" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_NOMBRE_DE_EMPRESA_EN_EXPEDIENTE_DE_COBRO_COACTIVO}">
+		{BEGIN NOMBRE_DE_EMPRESA_EN_EXPEDIENTE_DE_COBRO_COACTIVO_label}{$label cc_coactivo NOMBRE_DE_EMPRESA_EN_EXPEDIENTE_DE_COBRO_COACTIVO }{END NOMBRE_DE_EMPRESA_EN_EXPEDIENTE_DE_COBRO_COACTIVO_label}
+	</label>
+	<div class="r-edit-field">
+		{$NOMBRE_DE_EMPRESA_EN_EXPEDIENTE_DE_COBRO_COACTIVO_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="NOMBRE_DE_EMPRESA_EN_EXPEDIENTE_DE_COBRO_COACTIVO">
+		<div class="text-muted" >
+		{$tooltip cc_coactivo NOMBRE_DE_EMPRESA_EN_EXPEDIENTE_DE_COBRO_COACTIVO }		</div>
+	</div>
+</div>
+
+
+{END NOMBRE_DE_EMPRESA_EN_EXPEDIENTE_DE_COBRO_COACTIVO_fieldblock}
+	
+								</td>
+			{END cellblock_section_c13}
+								</tr>
+	 
+	 
+														<tr {$row_section_3} >
+										
+
+{BEGIN cellblock_section_c17}
+<td
+	{$cell_section_c17}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c17" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN CARACTER_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CARACTER}  r-vertical-field" 
+	data-signal-error-for="CARACTER{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="CARACTER" data-fieldname="CARACTER" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_CARACTER}">
+		{BEGIN CARACTER_label}{$label cc_coactivo CARACTER }{END CARACTER_label}
+	</label>
+	<div class="r-edit-field">
+		{$CARACTER_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="CARACTER">
+		<div class="text-muted" >
+		{$tooltip cc_coactivo CARACTER }		</div>
+	</div>
+</div>
+
+
+{END CARACTER_fieldblock}
+	
+								</td>
+			{END cellblock_section_c17}
+			 
+		
+							
+
+{BEGIN cellblock_section_c18}
+<td
+	{$cell_section_c18}
+	class=" r-ori-vert"
+	
+			data-single
+			
+	ocolspan="2"		data-cellId="section_c18" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section_c18}
+								</tr>
+	 
+	 
+														<tr {$row_section_4} >
+										
+
+{BEGIN cellblock_section_c4}
+<td
+	{$cell_section_c4}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c4" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN CLASE_SANCION_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CLASE_SANCION}  r-vertical-field" 
+	data-signal-error-for="CLASE_SANCION{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="CLASE_SANCION" data-fieldname="CLASE_SANCION" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_CLASE_SANCION}">
+		{BEGIN CLASE_SANCION_label}{$label cc_coactivo CLASE_SANCION }{END CLASE_SANCION_label}
+	</label>
+	<div class="r-edit-field">
+		{$CLASE_SANCION_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="CLASE_SANCION">
+		<div class="text-muted" >
+		{$tooltip cc_coactivo CLASE_SANCION }		</div>
+	</div>
+</div>
+
+
+{END CLASE_SANCION_fieldblock}
+	
+								</td>
+			{END cellblock_section_c4}
+			 
+																
+
+{BEGIN cellblock_section_c5}
+<td
+	{$cell_section_c5}
+	class=" r-ori-vert"
+	
+			data-single
+			
+	ocolspan="2"		data-cellId="section_c5" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN REMITENTE_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_REMITENTE}  r-vertical-field" 
+	data-signal-error-for="REMITENTE{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="REMITENTE" data-fieldname="REMITENTE" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_REMITENTE}">
+		{BEGIN REMITENTE_label}{$label cc_coactivo REMITENTE }{END REMITENTE_label}
+	</label>
+	<div class="r-edit-field">
+		{$REMITENTE_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="REMITENTE">
+		<div class="text-muted" >
+		{$tooltip cc_coactivo REMITENTE }		</div>
+	</div>
+</div>
+
+
+{END REMITENTE_fieldblock}
+	
+								</td>
+			{END cellblock_section_c5}
+								</tr>
+	 
+	 
+														<tr {$row_section_5} >
+										
+
+{BEGIN cellblock_section_c2}
+<td
+	{$cell_section_c2}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c2" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN ESTADO_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ESTADO}  r-vertical-field" 
+	data-signal-error-for="ESTADO{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="ESTADO" data-fieldname="ESTADO" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_ESTADO}">
+		{BEGIN ESTADO_label}{$label cc_coactivo ESTADO }{END ESTADO_label}
+	</label>
+	<div class="r-edit-field">
+		{$ESTADO_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ESTADO">
+		<div class="text-muted" >
+		{$tooltip cc_coactivo ESTADO }		</div>
+	</div>
+</div>
+
+
+{END ESTADO_fieldblock}
+	
+								</td>
+			{END cellblock_section_c2}
+			 
+																
+
+{BEGIN cellblock_section_c3}
+<td
+	{$cell_section_c3}
+	class=" r-ori-vert"
+	
+			data-single
+			
+	ocolspan="2"		data-cellId="section_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN ACUERDO_PAGO_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ACUERDO_PAGO}  r-vertical-field" 
+	data-signal-error-for="ACUERDO_PAGO{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="ACUERDO_PAGO" data-fieldname="ACUERDO_PAGO" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_ACUERDO_PAGO}">
+		{BEGIN ACUERDO_PAGO_label}{$label cc_coactivo ACUERDO_PAGO }{END ACUERDO_PAGO_label}
+	</label>
+	<div class="r-edit-field">
+		{$ACUERDO_PAGO_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ACUERDO_PAGO">
+		<div class="text-muted" >
+		{$tooltip cc_coactivo ACUERDO_PAGO }		</div>
+	</div>
+</div>
+
+
+{END ACUERDO_PAGO_fieldblock}
+	
+								</td>
+			{END cellblock_section_c3}
+								</tr>
+	 
+	 
+														<tr {$row_section_6} >
+										
+
+{BEGIN cellblock_section_c9}
+<td
+	{$cell_section_c9}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c9" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN ULTIMA_ACTUACION_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ULTIMA_ACTUACION}  r-vertical-field" 
+	data-signal-error-for="ULTIMA_ACTUACION{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="ULTIMA_ACTUACION" data-fieldname="ULTIMA_ACTUACION" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_ULTIMA_ACTUACION}">
+		{BEGIN ULTIMA_ACTUACION_label}{$label cc_coactivo ULTIMA_ACTUACION }{END ULTIMA_ACTUACION_label}
+	</label>
+	<div class="r-edit-field">
+		{$ULTIMA_ACTUACION_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ULTIMA_ACTUACION">
+		<div class="text-muted" >
+		{$tooltip cc_coactivo ULTIMA_ACTUACION }		</div>
+	</div>
+</div>
+
+
+{END ULTIMA_ACTUACION_fieldblock}
+	
+								</td>
+			{END cellblock_section_c9}
+			 
+																
+
+{BEGIN cellblock_section_c10}
+<td
+	{$cell_section_c10}
+	class=" r-ori-vert"
+	
+			data-single
+			
+	ocolspan="2"		data-cellId="section_c10" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN COMENTARIO_UA_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_COMENTARIO_UA}  r-vertical-field" 
+	data-signal-error-for="COMENTARIO_UA{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="COMENTARIO_UA" data-fieldname="COMENTARIO_UA" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_COMENTARIO_UA}">
+		{BEGIN COMENTARIO_UA_label}{$label cc_coactivo COMENTARIO_UA }{END COMENTARIO_UA_label}
+	</label>
+	<div class="r-edit-field">
+		{$COMENTARIO_UA_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="COMENTARIO_UA">
+		<div class="text-muted" >
+		{$tooltip cc_coactivo COMENTARIO_UA }		</div>
+	</div>
+</div>
+
+
+{END COMENTARIO_UA_fieldblock}
+	
+								</td>
+			{END cellblock_section_c10}
+								</tr>
+	 
+	 
+														<tr {$row_section_7} >
+										
+
+{BEGIN cellblock_section_c11}
+<td
+	{$cell_section_c11}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c11" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN VALOR_SANCION_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_VALOR_SANCION}  r-vertical-field" 
+	data-signal-error-for="VALOR_SANCION{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="VALOR_SANCION" data-fieldname="VALOR_SANCION" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_VALOR_SANCION}">
+		{BEGIN VALOR_SANCION_label}{$label cc_coactivo VALOR_SANCION }{END VALOR_SANCION_label}
+	</label>
+	<div class="r-edit-field">
+		{$VALOR_SANCION_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="VALOR_SANCION">
+		<div class="text-muted" >
+		{$tooltip cc_coactivo VALOR_SANCION }		</div>
+	</div>
+</div>
+
+
+{END VALOR_SANCION_fieldblock}
+	
+								</td>
+			{END cellblock_section_c11}
+			 
+																
+
+{BEGIN cellblock_section_c12}
+<td
+	{$cell_section_c12}
+	class=" r-ori-vert"
+	
+			data-single
+			
+	ocolspan="2"		data-cellId="section_c12" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN FECHA_EJECUTORIA_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_FECHA_EJECUTORIA}  r-vertical-field" 
+	data-signal-error-for="FECHA_EJECUTORIA{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="FECHA_EJECUTORIA" data-fieldname="FECHA_EJECUTORIA" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_FECHA_EJECUTORIA}">
+		{BEGIN FECHA_EJECUTORIA_label}{$label cc_coactivo FECHA_EJECUTORIA }{END FECHA_EJECUTORIA_label}
+	</label>
+	<div class="r-edit-field">
+		{$FECHA_EJECUTORIA_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="FECHA_EJECUTORIA">
+		<div class="text-muted" >
+		{$tooltip cc_coactivo FECHA_EJECUTORIA }		</div>
+	</div>
+</div>
+
+
+{END FECHA_EJECUTORIA_fieldblock}
+	
+								</td>
+			{END cellblock_section_c12}
+								</tr>
+			</tbody></table>
+{END section_block}
+						</div>
+					<div role="tabpanel" class="tab-pane " id="tab_section1{$pageid}"> 
+			{BEGIN section1_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section1" id="form_section1_{$pageid}" data-makeup="small" {$form_section1} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_section1_0} >
+										
+
+{BEGIN cellblock_section1_c1}
+<td
+	{$cell_section1_c1}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c1" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN CIUDAD_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_CIUDAD}  r-vertical-field" 
+	data-signal-error-for="CIUDAD{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="CIUDAD" data-fieldname="CIUDAD" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_CIUDAD}">
+		{BEGIN CIUDAD_label}{$label cc_coactivo CIUDAD }{END CIUDAD_label}
+	</label>
+	<div class="r-edit-field">
+		{$CIUDAD_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="CIUDAD">
+		<div class="text-muted" >
+		{$tooltip cc_coactivo CIUDAD }		</div>
+	</div>
+</div>
+
+
+{END CIUDAD_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c1}
+			 
+																
+
+{BEGIN cellblock_section1_c}
+<td
+	{$cell_section1_c}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN DIRECCION_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_DIRECCION}  r-vertical-field" 
+	data-signal-error-for="DIRECCION{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="DIRECCION" data-fieldname="DIRECCION" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_DIRECCION}">
+		{BEGIN DIRECCION_label}{$label cc_coactivo DIRECCION }{END DIRECCION_label}
+	</label>
+	<div class="r-edit-field">
+		{$DIRECCION_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="DIRECCION">
+		<div class="text-muted" >
+		{$tooltip cc_coactivo DIRECCION }		</div>
+	</div>
+</div>
+
+
+{END DIRECCION_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c}
+								</tr>
+	 
+	 
+														<tr {$row_section1_1} >
+										
+
+{BEGIN cellblock_section1_c10}
+<td
+	{$cell_section1_c10}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c10" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN TIEMPO_PRES_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_TIEMPO_PRES}  r-vertical-field" 
+	data-signal-error-for="TIEMPO_PRES{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field23" {$item_integrated_edit_field23} data-pageid="{$pageid}" data-field="TIEMPO_PRES" data-fieldname="TIEMPO_PRES" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_TIEMPO_PRES}">
+		{BEGIN TIEMPO_PRES_label}{$label cc_coactivo TIEMPO_PRES }{END TIEMPO_PRES_label}
+	</label>
+	<div class="r-edit-field">
+		{$TIEMPO_PRES_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="TIEMPO_PRES">
+		<div class="text-muted" >
+		{$tooltip cc_coactivo TIEMPO_PRES }		</div>
+	</div>
+</div>
+
+
+{END TIEMPO_PRES_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c10}
+			 
+		
+							
+
+{BEGIN cellblock_section1_c11}
+<td
+	{$cell_section1_c11}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c11" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section1_c11}
+								</tr>
+	 
+	 
+														<tr {$row_section1_2} >
+										
+
+{BEGIN cellblock_section1_c8}
+<td
+	{$cell_section1_c8}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c8" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN FECHA_MANDAMIENTO_PAGO_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_FECHA_MANDAMIENTO_PAGO}  r-vertical-field" 
+	data-signal-error-for="FECHA_MANDAMIENTO_PAGO{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="FECHA_MANDAMIENTO_PAGO" data-fieldname="FECHA_MANDAMIENTO_PAGO" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_FECHA_MANDAMIENTO_PAGO}">
+		{BEGIN FECHA_MANDAMIENTO_PAGO_label}{$label cc_coactivo FECHA_MANDAMIENTO_PAGO }{END FECHA_MANDAMIENTO_PAGO_label}
+	</label>
+	<div class="r-edit-field">
+		{$FECHA_MANDAMIENTO_PAGO_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="FECHA_MANDAMIENTO_PAGO">
+		<div class="text-muted" >
+		{$tooltip cc_coactivo FECHA_MANDAMIENTO_PAGO }		</div>
+	</div>
+</div>
+
+
+{END FECHA_MANDAMIENTO_PAGO_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c8}
+			 
+		
+							
+
+{BEGIN cellblock_section1_c9}
+<td
+	{$cell_section1_c9}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c9" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section1_c9}
+								</tr>
+	 
+	 
+														<tr {$row_section1_3} >
+										
+
+{BEGIN cellblock_section1_c4}
+<td
+	{$cell_section1_c4}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c4" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN FECHA_NOTIFICACION_MANDAMIENTO_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_FECHA_NOTIFICACION_MANDAMIENTO}  r-vertical-field" 
+	data-signal-error-for="FECHA_NOTIFICACION_MANDAMIENTO{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="FECHA_NOTIFICACION_MANDAMIENTO" data-fieldname="FECHA_NOTIFICACION_MANDAMIENTO" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_FECHA_NOTIFICACION_MANDAMIENTO}">
+		{BEGIN FECHA_NOTIFICACION_MANDAMIENTO_label}{$label cc_coactivo FECHA_NOTIFICACION_MANDAMIENTO }{END FECHA_NOTIFICACION_MANDAMIENTO_label}
+	</label>
+	<div class="r-edit-field">
+		{$FECHA_NOTIFICACION_MANDAMIENTO_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="FECHA_NOTIFICACION_MANDAMIENTO">
+		<div class="text-muted" >
+		{$tooltip cc_coactivo FECHA_NOTIFICACION_MANDAMIENTO }		</div>
+	</div>
+</div>
+
+
+{END FECHA_NOTIFICACION_MANDAMIENTO_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c4}
+			 
+																
+
+{BEGIN cellblock_section1_c5}
+<td
+	{$cell_section1_c5}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c5" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN FECHA_PRESCRIPCION_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_FECHA_PRESCRIPCION}  r-vertical-field" 
+	data-signal-error-for="FECHA_PRESCRIPCION{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field21" {$item_integrated_edit_field21} data-pageid="{$pageid}" data-field="FECHA_PRESCRIPCION" data-fieldname="FECHA_PRESCRIPCION" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_FECHA_PRESCRIPCION}">
+		{BEGIN FECHA_PRESCRIPCION_label}{$label cc_coactivo FECHA_PRESCRIPCION }{END FECHA_PRESCRIPCION_label}
+	</label>
+	<div class="r-edit-field">
+		{$FECHA_PRESCRIPCION_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="FECHA_PRESCRIPCION">
+		<div class="text-muted" >
+		{$tooltip cc_coactivo FECHA_PRESCRIPCION }		</div>
+	</div>
+</div>
+
+
+{END FECHA_PRESCRIPCION_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c5}
+								</tr>
+	 
+	 
+														<tr {$row_section1_4} >
+										
+
+{BEGIN cellblock_section1_c6}
+<td
+	{$cell_section1_c6}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c6" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN ABOGADO_RESP_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_ABOGADO_RESP}  r-vertical-field" 
+	data-signal-error-for="ABOGADO_RESP{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="ABOGADO_RESP" data-fieldname="ABOGADO_RESP" >
+
+	<label class="r-edit-label control-label" for="{$labelfor_ABOGADO_RESP}">
+		{BEGIN ABOGADO_RESP_label}{$label cc_coactivo ABOGADO_RESP }{END ABOGADO_RESP_label}
+	</label>
+	<div class="r-edit-field">
+		{$ABOGADO_RESP_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="ABOGADO_RESP">
+		<div class="text-muted" >
+		{$tooltip cc_coactivo ABOGADO_RESP }		</div>
+	</div>
+</div>
+
+
+{END ABOGADO_RESP_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c6}
+			 
+		
+							
+
+{BEGIN cellblock_section1_c7}
+<td
+	{$cell_section1_c7}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c7" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section1_c7}
+								</tr>
+			</tbody></table>
+{END section1_block}
+						</div>
+				</div>
+	</div>
+</div>  	
+				{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="2"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="add_save" data-itemid="add_save" {$item_add_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Guardar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="add_back_list" data-itemid="add_back_list" {$item_add_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="backButton{$id}" >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="add_cancel" data-itemid="add_cancel" {$item_add_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancelar			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>
