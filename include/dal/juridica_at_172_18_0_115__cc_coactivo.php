@@ -1,0 +1,41 @@
+<?php
+$dalTablecc_coactivo = array();
+$dalTablecc_coactivo["CC_ID"] = array("type"=>3,"varname"=>"CC_ID", "name" => "CC_ID", "autoInc" => "1");
+$dalTablecc_coactivo["EXPEDIENTE"] = array("type"=>200,"varname"=>"EXPEDIENTE", "name" => "EXPEDIENTE", "autoInc" => "0");
+$dalTablecc_coactivo["EXPEDIENTEREL"] = array("type"=>200,"varname"=>"EXPEDIENTEREL", "name" => "EXPEDIENTEREL", "autoInc" => "0");
+$dalTablecc_coactivo["TIPODOCUMENTO"] = array("type"=>16,"varname"=>"TIPODOCUMENTO", "name" => "TIPODOCUMENTO", "autoInc" => "0");
+$dalTablecc_coactivo["NIT_CEDULA"] = array("type"=>200,"varname"=>"NIT_CEDULA", "name" => "NIT_CEDULA", "autoInc" => "0");
+$dalTablecc_coactivo["DV"] = array("type"=>200,"varname"=>"DV", "name" => "DV", "autoInc" => "0");
+$dalTablecc_coactivo["NOMBRE_RAZON"] = array("type"=>200,"varname"=>"NOMBRE_RAZON", "name" => "NOMBRE_RAZON", "autoInc" => "0");
+$dalTablecc_coactivo["NOMBRE DE EMPRESA EN EXPEDIENTE DE COBRO COACTIVO"] = array("type"=>200,"varname"=>"NOMBRE_DE_EMPRESA_EN_EXPEDIENTE_DE_COBRO_COACTIVO", "name" => "NOMBRE DE EMPRESA EN EXPEDIENTE DE COBRO COACTIVO", "autoInc" => "0");
+$dalTablecc_coactivo["CARACTER"] = array("type"=>16,"varname"=>"CARACTER", "name" => "CARACTER", "autoInc" => "0");
+$dalTablecc_coactivo["CIUDAD"] = array("type"=>200,"varname"=>"CIUDAD", "name" => "CIUDAD", "autoInc" => "0");
+$dalTablecc_coactivo["DIRECCION"] = array("type"=>200,"varname"=>"DIRECCION", "name" => "DIRECCION", "autoInc" => "0");
+$dalTablecc_coactivo["CLASE_SANCION"] = array("type"=>3,"varname"=>"CLASE_SANCION", "name" => "CLASE_SANCION", "autoInc" => "0");
+$dalTablecc_coactivo["REMITENTE"] = array("type"=>3,"varname"=>"REMITENTE", "name" => "REMITENTE", "autoInc" => "0");
+$dalTablecc_coactivo["RESOLUCION_SANCION"] = array("type"=>200,"varname"=>"RESOLUCION_SANCION", "name" => "RESOLUCION_SANCION", "autoInc" => "0");
+$dalTablecc_coactivo["FECHA _RESOLUCION"] = array("type"=>7,"varname"=>"FECHA__RESOLUCION", "name" => "FECHA _RESOLUCION", "autoInc" => "0");
+$dalTablecc_coactivo["VALOR_SANCION"] = array("type"=>5,"varname"=>"VALOR_SANCION", "name" => "VALOR_SANCION", "autoInc" => "0");
+$dalTablecc_coactivo["RECAUDADO_CONSIGNACIONES"] = array("type"=>5,"varname"=>"RECAUDADO_CONSIGNACIONES", "name" => "RECAUDADO_CONSIGNACIONES", "autoInc" => "0");
+$dalTablecc_coactivo["RECAUDADO_TITULOS_JUDICIALES"] = array("type"=>5,"varname"=>"RECAUDADO_TITULOS_JUDICIALES", "name" => "RECAUDADO_TITULOS_JUDICIALES", "autoInc" => "0");
+$dalTablecc_coactivo["FECHA_EJECUTORIA"] = array("type"=>7,"varname"=>"FECHA_EJECUTORIA", "name" => "FECHA_EJECUTORIA", "autoInc" => "0");
+$dalTablecc_coactivo["FECHA_MANDAMIENTO_PAGO"] = array("type"=>7,"varname"=>"FECHA_MANDAMIENTO_PAGO", "name" => "FECHA_MANDAMIENTO_PAGO", "autoInc" => "0");
+$dalTablecc_coactivo["FECHA_NOTIFICACION_MANDAMIENTO"] = array("type"=>7,"varname"=>"FECHA_NOTIFICACION_MANDAMIENTO", "name" => "FECHA_NOTIFICACION_MANDAMIENTO", "autoInc" => "0");
+$dalTablecc_coactivo["ULTMA_ACTUACION"] = array("type"=>200,"varname"=>"ULTMA_ACTUACION", "name" => "ULTMA_ACTUACION", "autoInc" => "0");
+$dalTablecc_coactivo["FECHA_ACTUACION"] = array("type"=>200,"varname"=>"FECHA_ACTUACION", "name" => "FECHA_ACTUACION", "autoInc" => "0");
+$dalTablecc_coactivo["FECHA_PROX_ACTUACION"] = array("type"=>7,"varname"=>"FECHA_PROX_ACTUACION", "name" => "FECHA_PROX_ACTUACION", "autoInc" => "0");
+$dalTablecc_coactivo["ESTADO"] = array("type"=>3,"varname"=>"ESTADO", "name" => "ESTADO", "autoInc" => "0");
+$dalTablecc_coactivo["AUTO_CANCELACION"] = array("type"=>200,"varname"=>"AUTO_CANCELACION", "name" => "AUTO_CANCELACION", "autoInc" => "0");
+$dalTablecc_coactivo["ABOGADO"] = array("type"=>200,"varname"=>"ABOGADO", "name" => "ABOGADO", "autoInc" => "0");
+$dalTablecc_coactivo["ABOGADO_RESP"] = array("type"=>3,"varname"=>"ABOGADO_RESP", "name" => "ABOGADO_RESP", "autoInc" => "0");
+$dalTablecc_coactivo["FECHA_PRESCRIPCION"] = array("type"=>7,"varname"=>"FECHA_PRESCRIPCION", "name" => "FECHA_PRESCRIPCION", "autoInc" => "0");
+$dalTablecc_coactivo["DIAS FALTANTES PARA PRESCRIBIR"] = array("type"=>200,"varname"=>"DIAS_FALTANTES_PARA_PRESCRIBIR", "name" => "DIAS FALTANTES PARA PRESCRIBIR", "autoInc" => "0");
+$dalTablecc_coactivo["TIEMPO_PRES"] = array("type"=>3,"varname"=>"TIEMPO_PRES", "name" => "TIEMPO_PRES", "autoInc" => "0");
+$dalTablecc_coactivo["OBS_PROC_PAG_SN_EXTRC"] = array("type"=>200,"varname"=>"OBS_PROC_PAG_SN_EXTRC", "name" => "OBS_PROC_PAG_SN_EXTRC", "autoInc" => "0");
+$dalTablecc_coactivo["ULTIMA_ACTUACION"] = array("type"=>7,"varname"=>"ULTIMA_ACTUACION", "name" => "ULTIMA_ACTUACION", "autoInc" => "0");
+$dalTablecc_coactivo["COMENTARIO_UA"] = array("type"=>200,"varname"=>"COMENTARIO_UA", "name" => "COMENTARIO_UA", "autoInc" => "0");
+$dalTablecc_coactivo["ACUERDO_PAGO"] = array("type"=>16,"varname"=>"ACUERDO_PAGO", "name" => "ACUERDO_PAGO", "autoInc" => "0");
+$dalTablecc_coactivo["CC_ID"]["key"]=true;
+
+$dal_info["juridica_at_172_18_0_115__cc_coactivo"] = &$dalTablecc_coactivo;
+?>

@@ -1,0 +1,291 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel cc_coactivo search}","hidden":"{$item_hide_search_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+		
+		]
+	}
+}
+,
+		
+								
+''
+,
+		
+								
+{
+	table: {
+	
+				tableForm: true,
+				
+		location: 'grid',
+		
+		
+		widths: [
+									{BEGIN col_grid_0}
+						"*", 
+							{END col_grid_0}
+					 ],	
+		
+			heights: [
+								{BEGIN row_grid_0}
+						
+			"%",
+						{END row_grid_0}
+			 
+				],
+	
+		body: [
+				
+				{BEGIN row_grid_0}
+				[
+																{BEGIN cellblock_grid_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"text":{$CC_ID_pdfvalue},"hidden":"{$item_hide_integrated_search_field}"},
+				
+				
+			{"text":{$EXPEDIENTE_pdfvalue},"hidden":"{$item_hide_integrated_search_field1}"},
+				
+				
+			{"text":{$DV_pdfvalue},"hidden":"{$item_hide_integrated_search_field3}"},
+				
+				
+			{"text":{$NOMBRE_DE_EMPRESA_EN_EXPEDIENTE_DE_COBRO_COACTIVO_pdfvalue},"hidden":"{$item_hide_integrated_search_field5}"},
+				
+				
+			{"text":{$CIUDAD_pdfvalue},"hidden":"{$item_hide_integrated_search_field6}"},
+				
+				
+			{"text":{$DIRECCION_pdfvalue},"hidden":"{$item_hide_integrated_search_field7}"},
+				
+				
+			{"text":{$CLASE_SANCION_pdfvalue},"hidden":"{$item_hide_integrated_search_field8}"},
+				
+				
+			{"text":{$REMITENTE_pdfvalue},"hidden":"{$item_hide_integrated_search_field9}"},
+				
+				
+			{"text":{$ESTADO_pdfvalue},"hidden":"{$item_hide_integrated_search_field19}"},
+				
+				
+			{"text":{$ABOGADO_pdfvalue},"hidden":"{$item_hide_integrated_search_field21}"},
+				
+				
+			{"text":{$DIAS_FALTANTES_PARA_PRESCRIBIR_pdfvalue},"hidden":"{$item_hide_integrated_search_field23}"},
+				
+				
+			{"text":{$TIEMPO_PRES_pdfvalue},"hidden":"{$item_hide_integrated_search_field24}"},
+				
+				
+			{"text":{$OBS_PROC_PAG_SN_EXTRC_pdfvalue},"hidden":"{$item_hide_integrated_search_field25}"},
+				
+				
+			{"text":{$NIT_CEDULA_pdfvalue},"hidden":"{$item_hide_integrated_search_field2}"},
+				
+				
+			{"text":{$NOMBRE_RAZON_pdfvalue},"hidden":"{$item_hide_integrated_search_field4}"},
+				
+				
+			{"text":{$RESOLUCION_SANCION_pdfvalue},"hidden":"{$item_hide_integrated_search_field10}"},
+				
+				
+			{"text":{$FECHA__RESOLUCION_pdfvalue},"hidden":"{$item_hide_integrated_search_field11}"},
+				
+				
+			{"text":{$VALOR_SANCION_pdfvalue},"hidden":"{$item_hide_integrated_search_field12}"},
+				
+				
+			{"text":{$RECAUDADO_CONSIGNACIONES_pdfvalue},"hidden":"{$item_hide_integrated_search_field13}"},
+				
+				
+			{"text":{$RECAUDADO_TITULOS_JUDICIALES_pdfvalue},"hidden":"{$item_hide_integrated_search_field14}"},
+				
+				
+			{"text":{$FECHA_EJECUTORIA_pdfvalue},"hidden":"{$item_hide_integrated_search_field15}"},
+				
+				
+			{"text":{$FECHA_MANDAMIENTO_PAGO_pdfvalue},"hidden":"{$item_hide_integrated_search_field16}"},
+				
+				
+			{"text":{$FECHA_NOTIFICACION_MANDAMIENTO_pdfvalue},"hidden":"{$item_hide_integrated_search_field17}"},
+				
+				
+			{"text":{$ULTMA_ACTUACION_pdfvalue},"hidden":"{$item_hide_integrated_search_field18}"},
+				
+				
+			{"text":{$AUTO_CANCELACION_pdfvalue},"hidden":"{$item_hide_integrated_search_field20}"},
+				
+				
+			{"text":{$FECHA_PRESCRIPCION_pdfvalue},"hidden":"{$item_hide_integrated_search_field22}"},
+				
+				
+			{"text":{$ULTIMA_ACTUACION_pdfvalue},"hidden":"{$item_hide_integrated_search_field26}"},
+				
+				
+			{"text":{$COMENTARIO_UA_pdfvalue},"hidden":"{$item_hide_integrated_search_field27}"},
+				
+				
+			{"text":{$ACUERDO_PAGO_pdfvalue},"hidden":"{$item_hide_integrated_search_field28}"},
+				
+				
+			{"text":{$FECHA_ACTUACION_pdfvalue},"hidden":"{$item_hide_integrated_search_field29}"},
+				
+				
+			{"text":{$FECHA_PROX_ACTUACION_pdfvalue},"hidden":"{$item_hide_integrated_search_field30}"},
+				
+				
+			{"text":{$ABOGADO_RESP_pdfvalue},"hidden":"{$item_hide_integrated_search_field31}"},
+				
+				
+			{"text":{$EXPEDIENTEREL_pdfvalue},"hidden":"{$item_hide_integrated_search_field32}"},
+				
+				
+			{"text":{$TIPODOCUMENTO_pdfvalue},"hidden":"{$item_hide_integrated_search_field33}"},
+				
+				
+			{"text":{$CARACTER_pdfvalue},"hidden":"{$item_hide_integrated_search_field34}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+{END cellblock_grid_c3}
+											],
+				{END row_grid_0}
+		
+		]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'below-grid',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":""},
+				
+				
+			{"text":""},
+				
+				
+			{"text":"","hidden":"{$item_hide_search_back_list}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_search_cancel}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+		
+		]
+	}
+}
+,
+			]
+}
+  

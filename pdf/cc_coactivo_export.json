@@ -1,0 +1,189 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel cc_coactivo export}","hidden":"{$item_hide_export_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+		
+		]
+	}
+}
+,
+		
+				
+								
+{
+	table: {
+	
+				
+		location: 'grid',
+		
+		
+		widths: [
+								"%", 
+					 ],	
+		
+			heights: [
+								
+			"%",
+			 
+				],
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":{$CC_ID_pdfvalue},"hidden":"{$item_hide_export_field}"},
+				
+				
+			{"text":{$EXPEDIENTE_pdfvalue},"hidden":"{$item_hide_export_field1}"},
+				
+				
+			{"text":{$DV_pdfvalue},"hidden":"{$item_hide_export_field3}"},
+				
+				
+			{"text":{$NOMBRE_DE_EMPRESA_EN_EXPEDIENTE_DE_COBRO_COACTIVO_pdfvalue},"hidden":"{$item_hide_export_field5}"},
+				
+				
+			{"text":{$CIUDAD_pdfvalue},"hidden":"{$item_hide_export_field6}"},
+				
+				
+			{"text":{$DIRECCION_pdfvalue},"hidden":"{$item_hide_export_field7}"},
+				
+				
+			{"text":{$CLASE_SANCION_pdfvalue},"hidden":"{$item_hide_export_field8}"},
+				
+				
+			{"text":{$REMITENTE_pdfvalue},"hidden":"{$item_hide_export_field9}"},
+				
+				
+			{"text":{$ESTADO_pdfvalue},"hidden":"{$item_hide_export_field19}"},
+				
+				
+			{"text":{$TIEMPO_PRES_pdfvalue},"hidden":"{$item_hide_export_field24}"},
+				
+				
+			{"text":{$NIT_CEDULA_pdfvalue},"hidden":"{$item_hide_export_field2}"},
+				
+				
+			{"text":{$VALOR_SANCION_pdfvalue},"hidden":"{$item_hide_export_field12}"},
+				
+				
+			{"text":{$FECHA_EJECUTORIA_pdfvalue},"hidden":"{$item_hide_export_field15}"},
+				
+				
+			{"text":{$FECHA_MANDAMIENTO_PAGO_pdfvalue},"hidden":"{$item_hide_export_field16}"},
+				
+				
+			{"text":{$FECHA_NOTIFICACION_MANDAMIENTO_pdfvalue},"hidden":"{$item_hide_export_field17}"},
+				
+				
+			{"text":{$FECHA_PRESCRIPCION_pdfvalue},"hidden":"{$item_hide_export_field22}"},
+				
+				
+			{"text":{$ULTIMA_ACTUACION_pdfvalue},"hidden":"{$item_hide_export_field10}"},
+				
+				
+			{"text":{$COMENTARIO_UA_pdfvalue},"hidden":"{$item_hide_export_field11}"},
+				
+				
+			{"text":{$ACUERDO_PAGO_pdfvalue},"hidden":"{$item_hide_export_field13}"},
+				
+				
+			{"text":{$ABOGADO_RESP_pdfvalue},"hidden":"{$item_hide_export_field20}"},
+				
+				
+			{"text":{$EXPEDIENTEREL_pdfvalue},"hidden":"{$item_hide_export_field4}"},
+				
+				
+			{"text":{$TIPODOCUMENTO_pdfvalue},"hidden":"{$item_hide_export_field14}"},
+				
+				
+			{"text":{$CARACTER_pdfvalue},"hidden":"{$item_hide_export_field18}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+  },
+
+											],
+		
+		]
+	}
+}
+,
+		
+					]
+}
+  

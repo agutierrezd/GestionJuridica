@@ -1,0 +1,42 @@
+<?php
+$dalTablerj_master = array();
+$dalTablerj_master["oj_id"] = array("type"=>3,"varname"=>"oj_id", "name" => "oj_id", "autoInc" => "1");
+$dalTablerj_master["id_oaj"] = array("type"=>3,"varname"=>"id_oaj", "name" => "id_oaj", "autoInc" => "0");
+$dalTablerj_master["tipo_proceso_fk"] = array("type"=>3,"varname"=>"tipo_proceso_fk", "name" => "tipo_proceso_fk", "autoInc" => "0");
+$dalTablerj_master["num_proceso"] = array("type"=>200,"varname"=>"num_proceso", "name" => "num_proceso", "autoInc" => "0");
+$dalTablerj_master["estado_id_fk"] = array("type"=>16,"varname"=>"estado_id_fk", "name" => "estado_id_fk", "autoInc" => "0");
+$dalTablerj_master["hechos"] = array("type"=>201,"varname"=>"hechos", "name" => "hechos", "autoInc" => "0");
+$dalTablerj_master["municipio_fk"] = array("type"=>200,"varname"=>"municipio_fk", "name" => "municipio_fk", "autoInc" => "0");
+$dalTablerj_master["causas"] = array("type"=>200,"varname"=>"causas", "name" => "causas", "autoInc" => "0");
+$dalTablerj_master["doc_demandante"] = array("type"=>200,"varname"=>"doc_demandante", "name" => "doc_demandante", "autoInc" => "0");
+$dalTablerj_master["nom_demandante"] = array("type"=>200,"varname"=>"nom_demandante", "name" => "nom_demandante", "autoInc" => "0");
+$dalTablerj_master["apoderado_demandante"] = array("type"=>200,"varname"=>"apoderado_demandante", "name" => "apoderado_demandante", "autoInc" => "0");
+$dalTablerj_master["nom_demandado"] = array("type"=>200,"varname"=>"nom_demandado", "name" => "nom_demandado", "autoInc" => "0");
+$dalTablerj_master["despacho_actual"] = array("type"=>200,"varname"=>"despacho_actual", "name" => "despacho_actual", "autoInc" => "0");
+$dalTablerj_master["fecha_presentacion_demanda"] = array("type"=>7,"varname"=>"fecha_presentacion_demanda", "name" => "fecha_presentacion_demanda", "autoInc" => "0");
+$dalTablerj_master["pretenciones"] = array("type"=>201,"varname"=>"pretenciones", "name" => "pretenciones", "autoInc" => "0");
+$dalTablerj_master["cuantia_pretension"] = array("type"=>200,"varname"=>"cuantia_pretension", "name" => "cuantia_pretension", "autoInc" => "0");
+$dalTablerj_master["cuantia_pretension_index"] = array("type"=>200,"varname"=>"cuantia_pretension_index", "name" => "cuantia_pretension_index", "autoInc" => "0");
+$dalTablerj_master["apoderado_oajtemp"] = array("type"=>200,"varname"=>"apoderado_oajtemp", "name" => "apoderado_oajtemp", "autoInc" => "0");
+$dalTablerj_master["apoderado_oaj"] = array("type"=>200,"varname"=>"apoderado_oaj", "name" => "apoderado_oaj", "autoInc" => "0");
+$dalTablerj_master["fecha_admision_demanda"] = array("type"=>7,"varname"=>"fecha_admision_demanda", "name" => "fecha_admision_demanda", "autoInc" => "0");
+$dalTablerj_master["fecha_radicado_oaj"] = array("type"=>7,"varname"=>"fecha_radicado_oaj", "name" => "fecha_radicado_oaj", "autoInc" => "0");
+$dalTablerj_master["contestacion_demanda"] = array("type"=>200,"varname"=>"contestacion_demanda", "name" => "contestacion_demanda", "autoInc" => "0");
+$dalTablerj_master["fecha_constestacion_demanda"] = array("type"=>7,"varname"=>"fecha_constestacion_demanda", "name" => "fecha_constestacion_demanda", "autoInc" => "0");
+$dalTablerj_master["etapa_judicial"] = array("type"=>3,"varname"=>"etapa_judicial", "name" => "etapa_judicial", "autoInc" => "0");
+$dalTablerj_master["fecha_provision_contable"] = array("type"=>135,"varname"=>"fecha_provision_contable", "name" => "fecha_provision_contable", "autoInc" => "0");
+$dalTablerj_master["valor_provision_contable"] = array("type"=>200,"varname"=>"valor_provision_contable", "name" => "valor_provision_contable", "autoInc" => "0");
+$dalTablerj_master["propabilidad_perder_caso"] = array("type"=>3,"varname"=>"propabilidad_perder_caso", "name" => "propabilidad_perder_caso", "autoInc" => "0");
+$dalTablerj_master["observacion_perder_caso"] = array("type"=>200,"varname"=>"observacion_perder_caso", "name" => "observacion_perder_caso", "autoInc" => "0");
+$dalTablerj_master["fecha_proxima_actualizacion"] = array("type"=>7,"varname"=>"fecha_proxima_actualizacion", "name" => "fecha_proxima_actualizacion", "autoInc" => "0");
+$dalTablerj_master["radicado_ekogui"] = array("type"=>200,"varname"=>"radicado_ekogui", "name" => "radicado_ekogui", "autoInc" => "0");
+$dalTablerj_master["fecha_radicado_ekogui"] = array("type"=>7,"varname"=>"fecha_radicado_ekogui", "name" => "fecha_radicado_ekogui", "autoInc" => "0");
+$dalTablerj_master["ekogui_id"] = array("type"=>200,"varname"=>"ekogui_id", "name" => "ekogui_id", "autoInc" => "0");
+$dalTablerj_master["carpeta"] = array("type"=>200,"varname"=>"carpeta", "name" => "carpeta", "autoInc" => "0");
+$dalTablerj_master["CAJA"] = array("type"=>200,"varname"=>"CAJA", "name" => "CAJA", "autoInc" => "0");
+$dalTablerj_master["estado_proceso"] = array("type"=>201,"varname"=>"estado_proceso", "name" => "estado_proceso", "autoInc" => "0");
+$dalTablerj_master["calidad"] = array("type"=>200,"varname"=>"calidad", "name" => "calidad", "autoInc" => "0");
+$dalTablerj_master["oj_id"]["key"]=true;
+
+$dal_info["juridica_at_172_18_0_115__rj_master"] = &$dalTablerj_master;
+?>
